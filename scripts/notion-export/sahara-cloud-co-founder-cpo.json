@@ -1,0 +1,154 @@
+{
+  "title": "",
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "📌 Project Overviewb"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sahara Cloud is a web-based platform that enables users to build, test, and debug hardware in the cloudb through virtual simulations and remote hardware accessb. Traditional design tools are outdated, inefficient, and cost companies millions in wasted R&Db. Sahara Cloud solves this by allowing teams to run hardware and software tests on the same systemb, reducing development costs and time-to-market."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "🔹 Problem (The Challenge)b"
+    },
+    {
+      "type": "paragraph",
+      "text": "Outdated hardware design toolsb force engineers to use makeshift scriptsb to adapt automation tools, causing inefficiencies, costly mistakes, and delays. $580B+ is spent globallyb on solving hardware design challenges due to:"
+    },
+    {
+      "type": "bullet",
+      "text": "Lack of integrationb between software, firmware, and hardware testing."
+    },
+    {
+      "type": "bullet",
+      "text": "Limited access to hardware toolsb, requiring high CapEx investmentsb."
+    },
+    {
+      "type": "bullet",
+      "text": "Time-consuming debuggingb processes that slow down R&D."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "🔹 Solution & Execution (My Role & Impact)b"
+    },
+    {
+      "type": "paragraph",
+      "text": "As Co-Founder & Chief Product Officerb, I led 0→1 product developmentb, customer discoveryb, and fundraisingb, driving Sahara Cloud from conception to launchb."
+    },
+    {
+      "type": "paragraph",
+      "text": "✅ Product Strategy & Market Fit:b"
+    },
+    {
+      "type": "bullet",
+      "text": "Conducted user research & interviewsb to identify pain points."
+    },
+    {
+      "type": "bullet",
+      "text": "Developed an AI-powered cloud labb for remote debugging, unit testing, and hardware simulation."
+    },
+    {
+      "type": "bullet",
+      "text": "Launched MVP with 200 Beta Users, 3 Universities, and 1 Enterprise Clientb."
+    },
+    {
+      "type": "paragraph",
+      "text": "✅ Growth & Go-To-Market Strategy:b"
+    },
+    {
+      "type": "bullet",
+      "text": "A/B testing & analyticsb to optimize conversion, increasing sign-up rates by 50%b."
+    },
+    {
+      "type": "bullet",
+      "text": "Drove 30% prospect-to-demo rateb through effective marketing and product positioningb."
+    },
+    {
+      "type": "bullet",
+      "text": "Built strategic partnerships with academic institutions & enterprise clientsb."
+    },
+    {
+      "type": "paragraph",
+      "text": "✅ Fundraising & Business Operations:b"
+    },
+    {
+      "type": "bullet",
+      "text": "Secured $750K in pre-seed fundingb through data-backed pitches & market validationb."
+    },
+    {
+      "type": "bullet",
+      "text": "Managed P&L, budgeting, hiring, and go-to-market executionb."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "🔹 Results & Impactb"
+    },
+    {
+      "type": "paragraph",
+      "text": "📈 Business Growth & Adoption:b"
+    },
+    {
+      "type": "bullet",
+      "text": "Enrolled 200 Beta Users, 3 Universities, and 1 Enterprise Clientb in pilot programs."
+    },
+    {
+      "type": "bullet",
+      "text": "Raised $750K+ in venture fundingb to scale operations."
+    },
+    {
+      "type": "bullet",
+      "text": "Achieved a 30% demo conversion rateb through optimized marketing & positioning."
+    },
+    {
+      "type": "paragraph",
+      "text": "📊 Product Success Metrics:b"
+    },
+    {
+      "type": "bullet",
+      "text": "Reduced R&D development time by 35%b, saving users $1M in costsb."
+    },
+    {
+      "type": "bullet",
+      "text": "Increased feature adoption & engagementb through personalized AI-powered onboardingb."
+    },
+    {
+      "type": "bullet",
+      "text": "Optimized user sign-up rates by 50%b via A/B testing and behavioral insightsb."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "🔹 Key Learnings & Takeawaysb"
+    },
+    {
+      "type": "paragraph",
+      "text": "🚀 End-to-End Product Leadership:b Led all aspects of roadmapping, GTM strategy, and business developmentb while ensuring user-centric execution."
+    },
+    {
+      "type": "paragraph",
+      "text": "📊 Data-Driven Decision Making:b Used qualitative & quantitative insightsb to identify pain points, run A/B tests, and drive user engagement."
+    },
+    {
+      "type": "paragraph",
+      "text": "💰 Fundraising & Startup Growth:b Developed investor pitches, managed lean operations, and balanced scalability vs. budget constraintsb."
+    }
+  ]
+}

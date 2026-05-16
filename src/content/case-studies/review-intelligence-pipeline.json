@@ -1,0 +1,66 @@
+{
+  "title": "Review Intelligence Pipeline",
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Overview"
+    },
+    {
+      "type": "paragraph",
+      "text": "Built an end-to-end LLM pipeline that ingests 20,000+ product reviews and outputs structured themes, sentiment, and feature requests for product decision-making."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Problem"
+    },
+    {
+      "type": "paragraph",
+      "text": "Product teams couldn't systematically mine large review corpora. Manual tagging was slow and inconsistent; generic sentiment tools lacked product-specific structure."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Solution"
+    },
+    {
+      "type": "bullet",
+      "text": "Designed chunked ingestion and schema-constrained generation"
+    },
+    {
+      "type": "bullet",
+      "text": "Built automated evals for JSON validity and faithfulness to source text"
+    },
+    {
+      "type": "bullet",
+      "text": "Iterated prompts and post-processing until outputs were reliably machine-consumable"
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Results and Impact"
+    },
+    {
+      "type": "bullet",
+      "text": "99% JSON validity on evaluation sets"
+    },
+    {
+      "type": "bullet",
+      "text": "98% faithfulness to source reviews"
+    },
+    {
+      "type": "bullet",
+      "text": "Analysis compressed from hours to minutes per batch run"
+    }
+  ]
+}

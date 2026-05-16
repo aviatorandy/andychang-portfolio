@@ -1,0 +1,62 @@
+{
+  "title": "AI Dental Billing Auditor — BillHero",
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Overview"
+    },
+    {
+      "type": "paragraph",
+      "text": "Built an LLM + rules hybrid system that audits dental explanation of benefits (EOBs), flags billing discrepancies, and cuts review time from 15 minutes to under one minute per claim."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Problem"
+    },
+    {
+      "type": "paragraph",
+      "text": "Manual EOB review was slow, error-prone, and didn't scale for billing teams reviewing high claim volumes. Discrepancies were easy to miss under time pressure."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Solution"
+    },
+    {
+      "type": "bullet",
+      "text": "Combined structured rule checks for known billing patterns with LLM extraction over unstructured EOB fields"
+    },
+    {
+      "type": "bullet",
+      "text": "Designed evaluation sets and human review flows for high-confidence vs. ambiguous flags"
+    },
+    {
+      "type": "bullet",
+      "text": "Built reasoning layer to surface 1–3 actionable discrepancies per claim"
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Results and Impact"
+    },
+    {
+      "type": "bullet",
+      "text": "Review time reduced from 15 minutes to under 1 minute per claim"
+    },
+    {
+      "type": "bullet",
+      "text": "1–3 discrepancies detected per reviewed EOB on average"
+    }
+  ]
+}

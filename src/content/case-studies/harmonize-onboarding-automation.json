@@ -1,0 +1,161 @@
+{
+  "title": "Automating & Standardizing Employee Onboarding @ Chat Based HR Company (Harmonize)",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "📌 Project Overview"
+    },
+    {
+      "type": "paragraph",
+      "text": "Harmonize HQ is a chat-based HR platform designed to create a fun and collaborative workplace by streamlining employee onboarding. Early-stage startups often struggle with standardized onboarding due to rapid team changes, evolving jo roles, and a lack of structured processes. To solve this, I led the development of an MVP onboarding automation tool, ensuring consistency, efficiency, and scalability for growing startups."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Problem (The Challenge)"
+    },
+    {
+      "type": "paragraph",
+      "text": "💡 Startups struggle with scalable onboarding solutions"
+    },
+    {
+      "type": "bullet",
+      "text": "Rapid role & team changes make structured onboarding difficult."
+    },
+    {
+      "type": "bullet",
+      "text": "Existing onboarding systems are rigid and not adaptable for startups."
+    },
+    {
+      "type": "bullet",
+      "text": "Inefficient manual processes lead to missed steps and inconsistent experiences."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Solution & Execution (My Role & Impact)"
+    },
+    {
+      "type": "paragraph",
+      "text": "As Lead Product Manager, I led 0→1 product development, cross-functional team hiring, and user research to develop an automated, standardized onboarding solution."
+    },
+    {
+      "type": "paragraph",
+      "text": "✅ Product Strategy & MVP Development:"
+    },
+    {
+      "type": "bullet",
+      "text": "Designed an automated onboarding tool with role-specific templates for flexibility."
+    },
+    {
+      "type": "bullet",
+      "text": "Integrated an email scheduler for personalized communication, reducing manual effort."
+    },
+    {
+      "type": "bullet",
+      "text": "Focused on driving product adoption across Harmonize's HR suite."
+    },
+    {
+      "type": "paragraph",
+      "text": "✅ User Research & Iteration:"
+    },
+    {
+      "type": "bullet",
+      "text": "Conducted 20+ usability interviews to refine product positioning based on real user pain points."
+    },
+    {
+      "type": "bullet",
+      "text": "Iterated using data-driven design features that prioritized usability over \"nice-to-haves\"."
+    },
+    {
+      "type": "paragraph",
+      "text": "✅ Business & Revenue Impact:"
+    },
+    {
+      "type": "bullet",
+      "text": "Developed a growth strategy to convert free users into paid product adoption."
+    },
+    {
+      "type": "bullet",
+      "text": "Used scrappy experimentation to test and validate feature effectiveness before full rollout."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Results & Impact"
+    },
+    {
+      "type": "paragraph",
+      "text": "📈 Product Adoption & Engagement:"
+    },
+    {
+      "type": "bullet",
+      "text": "Increased startup adoption of the MVP, driving broader HR suite engagement."
+    },
+    {
+      "type": "bullet",
+      "text": "Boosted outreach response rates from 10% to 35% through refined product positioning."
+    },
+    {
+      "type": "paragraph",
+      "text": "💰 Revenue Growth & Efficiency Gains:"
+    },
+    {
+      "type": "bullet",
+      "text": "Increased monthly recurring revenue by 7% by driving free users to paid products."
+    },
+    {
+      "type": "bullet",
+      "text": "Reduced onboarding time and improved completion rates for new hires."
+    },
+    {
+      "type": "paragraph",
+      "text": "📊 Key Metrics Measured:"
+    },
+    {
+      "type": "bullet",
+      "text": "Total # of candidates onboarded → Tracked user engagement & adoption."
+    },
+    {
+      "type": "bullet",
+      "text": "% of onboarding completed → Measured process efficiency."
+    },
+    {
+      "type": "bullet",
+      "text": "Time to onboarding completion → Reduced inefficiencies in workflow."
+    },
+    {
+      "type": "bullet",
+      "text": "# of startups using Harmonize MVP & other products → Quantified product stickiness."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Key Learnings & Takeaways"
+    },
+    {
+      "type": "paragraph",
+      "text": "🚀 0→1 Product Development: Drove MVP from concept to launch, requiring rapid iterations, experimentation, and cross-team alignment."
+    },
+    {
+      "type": "paragraph",
+      "text": "📊 Data-Driven Decision Making: Applied A/B testing, user feedback, and analytics to prioritize features that directly solved user pain points."
+    },
+    {
+      "type": "paragraph",
+      "text": "🤝 Process Standardization & Communication: Established Scrum methodologies, JIRA workflows, and Slack-based communication to keep teams aligned."
+    }
+  ]
+}

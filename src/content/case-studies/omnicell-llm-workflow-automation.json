@@ -1,0 +1,82 @@
+{
+  "title": "LLM Workflow Automation at Omnicell",
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Overview"
+    },
+    {
+      "type": "paragraph",
+      "text": "Designed and shipped agentic LLM workflows that triage, research, and resolve customer support cases in a regulated healthcare environment — reducing manual handling while maintaining compliance guardrails."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Problem"
+    },
+    {
+      "type": "paragraph",
+      "text": "Customer issue resolution required significant manual effort across support and clinical operations teams. High case volume, strict healthcare regulations, and fragmented knowledge bases slowed resolution times and increased cost per case."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "My Role"
+    },
+    {
+      "type": "paragraph",
+      "text": "As Senior Product Manager, I owned product strategy, workflow design, evaluation criteria, and launch execution — partnering with engineering, security, and customer success to ship in a regulated environment."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Solution"
+    },
+    {
+      "type": "paragraph",
+      "text": "Partnered with engineering to build agentic workflows that retrieve context from internal systems, draft resolutions, and route edge cases to humans."
+    },
+    {
+      "type": "bullet",
+      "text": "Defined evaluation criteria and quality thresholds for automated resolutions"
+    },
+    {
+      "type": "bullet",
+      "text": "Built human-in-the-loop checkpoints for ambiguous or high-risk cases"
+    },
+    {
+      "type": "bullet",
+      "text": "Implemented audit logging for every automated action"
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Results and Impact"
+    },
+    {
+      "type": "bullet",
+      "text": "2,000+ cases automated with measurable quality controls"
+    },
+    {
+      "type": "bullet",
+      "text": "$220K in annual savings"
+    },
+    {
+      "type": "bullet",
+      "text": "Maintained traceability required for healthcare compliance"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "title": "Auth Re-architecture at Omnicell",
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Overview"
+    },
+    {
+      "type": "paragraph",
+      "text": "Owned the product strategy for re-architecting authentication to support enterprise SSO, delegated access, and faster onboarding — removing a critical blocker to revenue."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Problem"
+    },
+    {
+      "type": "paragraph",
+      "text": "Legacy authentication patterns couldn't support enterprise identity requirements. Deals were delayed or lost because customers couldn't onboard teams under their existing security policies."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "My Role"
+    },
+    {
+      "type": "paragraph",
+      "text": "As Senior Product Manager, I mapped customer onboarding friction across sales, CS, and engineering — prioritizing capabilities by revenue impact and sequencing delivery to unblock the largest accounts first."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Solution"
+    },
+    {
+      "type": "bullet",
+      "text": "Partnered with security and platform teams on migration paths"
+    },
+    {
+      "type": "bullet",
+      "text": "Prioritized enterprise SSO and delegated access patterns"
+    },
+    {
+      "type": "bullet",
+      "text": "Aligned GTM teams on rollout sequencing per customer segment"
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Results and Impact"
+    },
+    {
+      "type": "bullet",
+      "text": "95% of affected enterprise customers unblocked"
+    },
+    {
+      "type": "bullet",
+      "text": "$1M+ in revenue accelerated that had been held up by auth limitations"
+    }
+  ]
+}

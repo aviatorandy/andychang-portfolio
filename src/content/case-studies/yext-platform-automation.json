@@ -1,0 +1,174 @@
+{
+  "title": "Automating Efficiency Using Data @ Marketing Tech B2B SaaS Company (Yext)",
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Project Overview"
+    },
+    {
+      "type": "paragraph",
+      "text": "Yext is a New York-based digital presence platform that helps multi-location brands maintain consistent and accurate information across platforms like Google, Facebook, and Yelp. One of the biggest challenges in onboarding enterprise clients was manually matching large datasets to ensure data accuracy and synchronization—a time-intensive and error-prone process."
+    },
+    {
+      "type": "paragraph",
+      "text": "To solve this, I developed an automation tool that streamlined data processing, enhanced operational efficiency, and accelerated client onboarding while reducing errors and saving costs."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Problem (The Challenge)"
+    },
+    {
+      "type": "paragraph",
+      "text": "💡 Manual data matching was inefficient and costly"
+    },
+    {
+      "type": "bullet",
+      "text": "Onboarding enterprise clients required sifting through thousands of data rows to find exact matches across publishers (e.g., Google, Yelp, Tripadvisor, Yahoo)."
+    },
+    {
+      "type": "bullet",
+      "text": "This process was time-consuming, error-prone, and labor-intensive, leading to delays in client activation and platform syncing."
+    },
+    {
+      "type": "bullet",
+      "text": "Teams relied on manual verification, increasing human errors and operational bottlenecks."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Solution & Execution (My Role & Impact)"
+    },
+    {
+      "type": "paragraph",
+      "text": "As Platform Product Manager, I identified this inefficiency and took the initiative to automate data matching using Python-based scripting & AI-enhanced validation."
+    },
+    {
+      "type": "paragraph",
+      "text": "✅ Product Innovation & Automation:"
+    },
+    {
+      "type": "bullet",
+      "text": "Took a Python course to explore automation & scripting solutions."
+    },
+    {
+      "type": "bullet",
+      "text": "Built an MVP tool to validate healthcare professionals' data, ensuring regulatory accuracy."
+    },
+    {
+      "type": "bullet",
+      "text": "Expanded the automation tool across industries, scaling its impact for other enterprise clients."
+    },
+    {
+      "type": "paragraph",
+      "text": "✅ Cross-Functional Collaboration:"
+    },
+    {
+      "type": "bullet",
+      "text": "Partnered with engineers & data teams to refine algorithms and improve automation accuracy."
+    },
+    {
+      "type": "bullet",
+      "text": "Engaged with sales & enterprise clients to ensure the tool met onboarding and compliance needs."
+    },
+    {
+      "type": "bullet",
+      "text": "Developed a scalable, repeatable process that enhanced data integrity & operational workflows."
+    },
+    {
+      "type": "paragraph",
+      "text": "✅ Impact on Efficiency & Cost Savings:"
+    },
+    {
+      "type": "bullet",
+      "text": "Automated client onboarding & data validation, reducing manual work and improving speed to launch."
+    },
+    {
+      "type": "bullet",
+      "text": "Standardized data matching accuracy, ensuring fewer discrepancies in platform synchronization."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Results & Impact"
+    },
+    {
+      "type": "paragraph",
+      "text": "📈 Operational Efficiency Gains:"
+    },
+    {
+      "type": "bullet",
+      "text": "Saved 20,000+ work hours annually by automating manual matching."
+    },
+    {
+      "type": "bullet",
+      "text": "Reduced onboarding time, enabling faster client activations."
+    },
+    {
+      "type": "bullet",
+      "text": "Enhanced data accuracy, improving platform reliability across search engines & digital directories."
+    },
+    {
+      "type": "paragraph",
+      "text": "💰 Cost Savings & Business Impact:"
+    },
+    {
+      "type": "bullet",
+      "text": "$1M annual savings from reduced manual labor and improved accuracy."
+    },
+    {
+      "type": "bullet",
+      "text": "Improved accuracy of automated data matching, decreasing manual intervention & errors."
+    },
+    {
+      "type": "paragraph",
+      "text": "📊 Key Metrics Measured:"
+    },
+    {
+      "type": "bullet",
+      "text": "Total # of Matches → Increased successful automated data matches."
+    },
+    {
+      "type": "bullet",
+      "text": "Accuracy of Manual vs. Automated Matching → Improved precision & reduced human errors."
+    },
+    {
+      "type": "bullet",
+      "text": "Work Hours Saved → Quantified operational time efficiencies."
+    },
+    {
+      "type": "bullet",
+      "text": "Cost Savings → $1M annual reduction in labor costs."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Key Learnings & Takeaways"
+    },
+    {
+      "type": "paragraph",
+      "text": "🚀 Challenging the Status Quo: Identified inefficiencies in existing workflows and built an AI-powered automation tool to streamline operations."
+    },
+    {
+      "type": "paragraph",
+      "text": "📊 Applying Technical Skills to Real-World Problems: Leveraged Python, data science, and automation to solve manual data challenges."
+    },
+    {
+      "type": "paragraph",
+      "text": "🤝 Cross-Team Collaboration & Buy-In: Partnered with engineers to refine automation algorithms and engaged stakeholders to scale adoption across industries."
+    }
+  ]
+}

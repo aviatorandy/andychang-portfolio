@@ -1,0 +1,179 @@
+{
+  "title": "Launching a 0→1 Cloud Audit Log Platform for Healthcare Compliance",
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Overview"
+    },
+    {
+      "type": "paragraph",
+      "text": "Healthcare organizations need reliable evidence that sensitive medication, user, and system actions are secure, traceable, and compliant. At Omnicell, I led the end-to-end launch of a cloud-based audit logging platform that created a system of record for regulated activity across enterprise health systems."
+    },
+    {
+      "type": "paragraph",
+      "text": "The platform improved audit readiness, reduced manual compliance work, and lowered modeled regulatory exposure by approximately $2M."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Problem"
+    },
+    {
+      "type": "paragraph",
+      "text": "Audit data was fragmented across products and systems, making it difficult for healthcare IT and compliance teams to reconstruct user and system activity in real time."
+    },
+    {
+      "type": "paragraph",
+      "text": "This created three core problems:"
+    },
+    {
+      "type": "bullet",
+      "text": "🧩 Compliance teams relied on manual investigation to prepare for audits."
+    },
+    {
+      "type": "bullet",
+      "text": "🏥 Enterprise customers needed stronger traceability before broader cloud adoption."
+    },
+    {
+      "type": "bullet",
+      "text": "⚠️ Incomplete or inconsistent audit data increased regulatory and operational risk."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "My Role"
+    },
+    {
+      "type": "paragraph",
+      "text": "As Product Manager, I owned product strategy, MVP scope, requirements, stakeholder alignment, and launch execution."
+    },
+    {
+      "type": "paragraph",
+      "text": "I partnered with Engineering, Security, Compliance, Legal, Customer Success, and enterprise stakeholders to define what needed to be logged, how audit events should be structured, and how teams would securely access audit data."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Solution"
+    },
+    {
+      "type": "paragraph",
+      "text": "We built a centralized cloud audit logging platform that captured security-relevant and compliance-relevant actions across services and made those events searchable through secure, self-serve workflows."
+    },
+    {
+      "type": "paragraph",
+      "text": "Key capabilities included:"
+    },
+    {
+      "type": "bullet",
+      "text": "📐 Standardized audit event schema across services"
+    },
+    {
+      "type": "bullet",
+      "text": "🔐 Secure APIs for submitting audit events"
+    },
+    {
+      "type": "bullet",
+      "text": "🔎 Search and filtering for audit review workflows"
+    },
+    {
+      "type": "bullet",
+      "text": "🛡️ Role-based access controls for sensitive audit data"
+    },
+    {
+      "type": "bullet",
+      "text": "🗄️ Retention policies aligned with healthcare compliance needs"
+    },
+    {
+      "type": "bullet",
+      "text": "📘 System-of-record architecture for regulated user and system activity"
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Execution and Stakeholder Management"
+    },
+    {
+      "type": "paragraph",
+      "text": "The hardest part was not simply building logs. It was aligning multiple teams around a shared definition of auditability in a regulated environment."
+    },
+    {
+      "type": "paragraph",
+      "text": "I drove alignment by:"
+    },
+    {
+      "type": "bullet",
+      "text": "✅ Partnering with Security and Compliance to define HIPAA-aligned audit requirements."
+    },
+    {
+      "type": "bullet",
+      "text": "✅ Working with Engineering to define event schema, API contracts, retention, and access controls."
+    },
+    {
+      "type": "bullet",
+      "text": "✅ Coordinating with Customer Success and enterprise stakeholders to validate real audit workflows."
+    },
+    {
+      "type": "bullet",
+      "text": "✅ Prioritizing the MVP around the highest-risk workflows instead of trying to log every event on day one."
+    },
+    {
+      "type": "bullet",
+      "text": "✅ Balancing compliance rigor with engineering feasibility to keep the launch focused and scalable."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Results and Impact"
+    },
+    {
+      "type": "bullet",
+      "text": "💰 Reduced modeled regulatory exposure by approximately $2M."
+    },
+    {
+      "type": "bullet",
+      "text": "🎯 Achieved 100% traceability for defined security-relevant and compliance-relevant MVP events."
+    },
+    {
+      "type": "bullet",
+      "text": "⚡ Reduced audit preparation from weeks of manual investigation to minutes through self-serve audit access."
+    },
+    {
+      "type": "bullet",
+      "text": "🏥 Deployed across 3 major enterprise health systems."
+    },
+    {
+      "type": "bullet",
+      "text": "🔒 Improved enterprise readiness by giving customers stronger evidence of compliance, security, and operational control."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Key Learning"
+    },
+    {
+      "type": "paragraph",
+      "text": "This project taught me that strong platform products are often invisible when they work well. The value comes from reducing operational risk, creating trust, and giving internal and customer-facing teams a reliable foundation to move faster."
+    },
+    {
+      "type": "paragraph",
+      "text": "For regulated enterprise products, the product challenge is not just building the capability. It is defining the right system of record, aligning stakeholders on what “complete” means, and making the workflow usable enough that teams actually rely on it."
+    }
+  ]
+}
