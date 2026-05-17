@@ -69,8 +69,8 @@ export const caseStudies: CaseStudy[] = [
     metrics: [
       "20,000+ hours saved annually",
       "~$1M operating costs eliminated",
-      "96% CSAT maintained",
-      "Faster enterprise activation",
+      "Manual workflows automated",
+      "Scaled across enterprise onboarding",
     ],
     image: "/images/portfolio/yext.png",
   },

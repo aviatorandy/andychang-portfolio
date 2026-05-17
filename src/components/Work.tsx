@@ -14,8 +14,9 @@ export function Work() {
           Work
         </h2>
         <p className="mb-10 max-w-2xl text-[var(--color-ink-muted)]">
-          Platform products and operational automation — click any project for
-          the full case study.
+          Case studies across product management, AI workflow automation,
+          compliance platforms, enterprise data operations, and 0→1 product
+          systems.
         </p>
 
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">

@@ -1,10 +1,12 @@
 import Image from "next/image";
 
 const focusAreas = [
-  "Platform PM",
-  "Operational Efficiency",
+  "Product Management",
+  "AI Workflow Automation",
+  "Product Operations",
+  "Platform Systems",
   "0→1 Products",
-  "AI Automation",
+  "LLM Prototyping",
 ];
 
 export function Hero() {
@@ -13,18 +15,19 @@ export function Hero() {
       <div className="mx-auto grid max-w-5xl items-center gap-10 lg:grid-cols-[1fr_280px] lg:gap-14">
         <div>
           <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-[var(--color-ink-subtle)]">
-            Platform Product Manager & Builder
+            Product Manager · AI Workflow Automation · Product Ops
           </p>
           <h1 className="mb-3 text-4xl font-semibold tracking-tight text-[var(--color-ink)] sm:text-5xl lg:text-6xl">
             Andy Chang
           </h1>
           <p className="mb-4 text-xl font-medium leading-snug text-[var(--color-ink)] sm:text-2xl">
-            Product leader building data-driven solutions that scale.
+            Product Manager building AI-enabled workflow systems that turn manual operations into scalable products.
           </p>
           <p className="mb-6 max-w-2xl text-lg leading-relaxed text-[var(--color-ink-muted)]">
-            10+ years in platform PM and operational efficiency — 0→1 products,
-            enterprise automation, and AI workflows. I don&apos;t just write
-            specs; I build, prototype, and ship systems teams actually use.
+            10+ years across platform product management, enterprise operations,
+            and 0→1 product development. I specialize in turning high-friction
+            workflows into measurable systems using AI, automation, analytics,
+            and platform product thinking.
           </p>
           <div className="mb-8 flex flex-wrap gap-2">
             {focusAreas.map((area) => (

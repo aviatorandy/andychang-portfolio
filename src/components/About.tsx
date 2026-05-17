@@ -6,16 +6,16 @@ export function About() {
           About
         </h2>
         <p className="mb-4 max-w-3xl text-lg leading-relaxed text-[var(--color-ink-muted)]">
-          I build and scale automation-first platforms that simplify complex
-          workflows across startup and enterprise environments. I turn ambiguous,
-          high-friction processes into automated systems organizations can trust.
+          I build products and systems that help teams move faster, reduce
+          manual work, and make better decisions. My work spans healthcare
+          platform infrastructure, enterprise data operations, AI workflow
+          automation, product operations, and founder-led 0→1 product
+          development.
         </p>
         <p className="max-w-3xl text-lg leading-relaxed text-[var(--color-ink-muted)]">
-          Specialized in platform PM, operational efficiency, and 0→1 products.
-          Former co-founder, startup-to-IPO operator, and hands-on PM who ships
-          alongside engineers. Most recently at Omnicell in healthcare; previously
-          Co-founder at Sahara Cloud and Senior Platform Manager at Yext
-          (pre-IPO to IPO).
+          My strongest work sits at the intersection of product strategy,
+          operational efficiency, AI prototyping, and scalable platform
+          systems.
         </p>
       </div>
     </section>

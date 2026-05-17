@@ -36,7 +36,7 @@ export const featuredWork: WorkItem[] = [
     image: "/images/portfolio/yext.png",
     alt: "Yext",
     caption:
-      "Automating Efficiency Using Data @ Marketing Tech B2B SaaS Company (Yext)",
+      "Automating Enterprise Data Matching Workflows @ Yext",
     imageFit: "cover",
     imageBg: "bg-neutral-100",
   },
