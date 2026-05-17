@@ -51,7 +51,7 @@ export const caseStudies: CaseStudy[] = [
       "50+ discovery interviews",
       "4 pilot engagements",
     ],
-    image: "/images/portfolio/sahara-cloud.png",
+    image: "/images/portfolio/sahara_testing_gif.gif",
   },
   {
     slug: "yext-platform-automation",

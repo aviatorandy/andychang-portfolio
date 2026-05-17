@@ -11,10 +11,16 @@ export function getProjectImageStyles(image: string) {
       img: "object-cover object-top",
     };
   }
-  if (image.includes("sahara-cloud")) {
+  if (image.includes("sahara")) {
     return {
       container: "bg-neutral-900",
       img: "object-cover object-top",
+    };
+  }
+  if (image.includes("harmonize")) {
+    return {
+      container: "bg-neutral-50",
+      img: "object-contain p-8",
     };
   }
   return {

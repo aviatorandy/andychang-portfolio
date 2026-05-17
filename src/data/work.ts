@@ -23,7 +23,7 @@ export const featuredWork: WorkItem[] = [
   {
     slug: "sahara-cloud-co-founder-cpo",
     href: "/work/sahara-cloud-co-founder-cpo",
-    image: "/images/portfolio/sahara-cloud.png",
+    image: "/images/portfolio/sahara_testing_gif.gif",
     alt: "Sahara Cloud",
     caption:
       "Raising $750K and founding a company @ Hardware SaaS Startup (Sahara Cloud)",
@@ -47,7 +47,7 @@ export const featuredWork: WorkItem[] = [
     alt: "Harmonize",
     caption:
       "Automating & Standardizing Employee Onboarding @ Chat Based HR Company (Harmonize)",
-    imageFit: "cover",
+    imageFit: "contain",
     imageBg: "bg-neutral-50",
   },
 ];
