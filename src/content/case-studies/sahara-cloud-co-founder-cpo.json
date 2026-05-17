@@ -3,10 +3,7 @@
   "blocks": [
     {
       "type": "paragraph",
-      "text": "Co-founded Sahara Cloud, a web-based hardware simulation and remote testing platform designed to help engineering teams build, test, and debug hardware systems in the cloud. Led product strategy, customer discovery, MVP definition, fundraising, and early go-to-market execution, raising $750K in pre-seed funding and securing early pilots across universities and enterprise customers."
-    },
-    {
-      "type": "divider"
+      "text": "Co-founded Sahara Cloud, a web-based hardware simulation and remote testing platform that lets engineering teams build, test, and debug hardware in the cloud. Owned product, customer discovery, MVP definition, and GTM — raising $750K pre-seed and securing pilots across universities and enterprise customers."
     },
     {
       "type": "heading",
@@ -14,27 +11,20 @@
       "text": "Problem"
     },
     {
-      "type": "paragraph",
-      "text": "Hardware engineering teams faced slow, fragmented, and expensive development workflows."
+      "type": "bullet",
+      "text": "Software, firmware, and hardware testing lived in disconnected tools."
     },
     {
       "type": "bullet",
-      "text": "Software, firmware, and hardware testing often happened across disconnected tools and environments."
+      "text": "Teams used makeshift scripts to glue simulation, debugging, and testing together."
     },
     {
       "type": "bullet",
-      "text": "Teams relied on makeshift scripts and manual workarounds to connect simulation, debugging, and testing workflows."
+      "text": "Limited physical hardware access created bottlenecks and high CapEx."
     },
     {
       "type": "bullet",
-      "text": "Limited access to physical hardware created bottlenecks, high capital costs, and slower development cycles."
-    },
-    {
-      "type": "bullet",
-      "text": "Debugging hardware issues was time-consuming, making it harder for teams to reduce R&D cost and time-to-market."
-    },
-    {
-      "type": "divider"
+      "text": "Debugging cycles stretched R&D timelines and cost."
     },
     {
       "type": "heading",
@@ -42,11 +32,37 @@
       "text": "My Role"
     },
     {
-      "type": "paragraph",
-      "text": "As Co-founder and Chief Product Officer, I led product discovery, MVP strategy, roadmap development, fundraising support, customer development, and early go-to-market execution."
+      "type": "bullet",
+      "text": "Co-founder and Chief Product Officer — owned product, discovery, and roadmap."
     },
     {
-      "type": "divider"
+      "type": "bullet",
+      "text": "Led MVP definition, pilot design, and early customer development."
+    },
+    {
+      "type": "bullet",
+      "text": "Supported fundraising with market validation and product narrative."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Product Approach"
+    },
+    {
+      "type": "bullet",
+      "text": "Validated workflow pain through 50+ discovery interviews before scoping the MVP."
+    },
+    {
+      "type": "bullet",
+      "text": "Narrowed the wedge to remote access, simulation, and debugging."
+    },
+    {
+      "type": "bullet",
+      "text": "Designed for university and enterprise pilots in parallel for fast learning."
+    },
+    {
+      "type": "bullet",
+      "text": "Backed positioning with A/B testing on funnel conversion."
     },
     {
       "type": "heading",
@@ -54,91 +70,58 @@
       "text": "Solution"
     },
     {
-      "type": "paragraph",
-      "text": "Built a cloud-based platform that enabled engineering teams to run hardware simulations, remote debugging workflows, and testing environments through a shared web interface."
-    },
-    {
-      "type": "bullet",
-      "text": "Remote hardware access"
-    },
-    {
-      "type": "bullet",
-      "text": "Cloud-based simulation workflows"
-    },
-    {
-      "type": "bullet",
-      "text": "Debugging and unit testing support"
-    },
-    {
-      "type": "bullet",
-      "text": "Shared testing environments for engineering teams"
-    },
-    {
-      "type": "bullet",
-      "text": "Early onboarding flows for academic and enterprise pilots"
-    },
-    {
-      "type": "divider"
-    },
-    {
-      "type": "heading",
-      "level": 3,
-      "text": "Execution / Product Decisions"
-    },
-    {
-      "type": "bullet",
-      "text": "Conducted 50+ customer discovery interviews with engineering teams, universities, and enterprise prospects to validate workflow pain points."
-    },
-    {
-      "type": "bullet",
-      "text": "Defined the MVP around the most painful early use cases: remote access, simulation setup, debugging, and testing workflow visibility."
-    },
-    {
-      "type": "bullet",
-      "text": "Launched beta with 200 users, 3 universities, and 1 enterprise client."
-    },
-    {
-      "type": "bullet",
-      "text": "Built strategic partnerships with academic institutions and enterprise clients to validate demand."
-    },
-    {
-      "type": "bullet",
-      "text": "Used A/B testing and behavioral insights to improve sign-up conversion by 50%."
-    },
-    {
-      "type": "bullet",
-      "text": "Drove a 30% prospect-to-demo rate through clearer positioning and targeted outreach."
-    },
-    {
-      "type": "bullet",
-      "text": "Supported fundraising with customer evidence, market validation, and product roadmap clarity."
-    },
-    {
-      "type": "divider"
+      "type": "card-grid",
+      "items": [
+        {
+          "title": "Remote hardware access",
+          "description": "Shared cloud access to physical hardware for distributed teams."
+        },
+        {
+          "title": "Cloud simulation",
+          "description": "Run hardware simulation workflows without local infrastructure."
+        },
+        {
+          "title": "Debugging & unit testing",
+          "description": "Integrated workflows for hardware-software co-debugging."
+        },
+        {
+          "title": "Shared environments",
+          "description": "Team-level testing environments with consistent state."
+        },
+        {
+          "title": "Pilot onboarding flow",
+          "description": "Lightweight onboarding tuned to academic and enterprise pilot needs."
+        }
+      ]
     },
     {
       "type": "heading",
       "level": 3,
-      "text": "Tradeoffs & Product Decisions"
+      "text": "Key Product Decisions"
     },
     {
-      "type": "bullet",
-      "text": "Breadth vs focus: Narrowed the MVP around remote testing and simulation workflows instead of trying to replace every hardware design tool."
+      "type": "decision",
+      "decision": "Breadth vs focus",
+      "tradeoff": "Narrowed to remote testing and simulation; passed on replacing every design tool.",
+      "outcome": "Clear wedge with measurable pilot traction."
     },
     {
-      "type": "bullet",
-      "text": "Academic vs enterprise GTM: Used universities for faster validation while pursuing enterprise pilots for higher-value commercial proof."
+      "type": "decision",
+      "decision": "Academic vs enterprise GTM",
+      "tradeoff": "Used universities for fast validation; pursued enterprise for commercial proof.",
+      "outcome": "Two channels of evidence supporting the fundraise."
     },
     {
-      "type": "bullet",
-      "text": "Platform ambition vs MVP speed: Built only the workflows needed to validate usage, technical feasibility, and willingness to engage."
+      "type": "decision",
+      "decision": "Platform ambition vs MVP speed",
+      "tradeoff": "Built only the workflows needed to validate willingness to engage.",
+      "outcome": "Pilots launched fast and informed roadmap priorities."
     },
     {
-      "type": "bullet",
-      "text": "Custom pilot needs vs scalable platform: Supported early pilot requirements while identifying repeatable patterns for a broader SaaS product."
-    },
-    {
-      "type": "divider"
+      "type": "decision",
+      "decision": "Custom pilots vs scalable platform",
+      "tradeoff": "Supported pilot-specific needs while extracting repeatable patterns.",
+      "outcome": "Reusable platform foundation emerged from real customer use."
     },
     {
       "type": "heading",
@@ -147,11 +130,11 @@
     },
     {
       "type": "bullet",
-      "text": "Raised $750K in pre-seed funding to support product development and early go-to-market."
+      "text": "Raised $750K in pre-seed funding."
     },
     {
       "type": "bullet",
-      "text": "Launched MVP with 200 beta users, 3 universities, and 1 enterprise client."
+      "text": "Launched MVP with 200 beta users across 3 universities and 1 enterprise."
     },
     {
       "type": "bullet",
@@ -159,7 +142,7 @@
     },
     {
       "type": "bullet",
-      "text": "Achieved a 30% prospect-to-demo rate through improved positioning and targeted outreach."
+      "text": "Achieved 30% prospect-to-demo rate through sharper positioning and outreach."
     },
     {
       "type": "bullet",
@@ -167,10 +150,7 @@
     },
     {
       "type": "bullet",
-      "text": "Modeled a potential 35% reduction in R&D development time and up to $1M in customer cost savings based on pilot workflows and customer validation."
-    },
-    {
-      "type": "divider"
+      "text": "Modeled a potential 35% reduction in R&D time and up to $1M in customer cost savings based on pilot workflows."
     },
     {
       "type": "heading",
@@ -187,26 +167,19 @@
     },
     {
       "type": "bullet",
-      "text": "Prospect-to-demo conversion rate"
+      "text": "Prospect-to-demo conversion"
     },
     {
       "type": "bullet",
-      "text": "Sign-up conversion rate"
+      "text": "Sign-up conversion"
     },
     {
       "type": "bullet",
-      "text": "Customer discovery interviews conducted"
-    },
-    {
-      "type": "bullet",
-      "text": "Modeled R&D time savings"
+      "text": "Discovery interviews"
     },
     {
       "type": "bullet",
       "text": "Fundraising milestones"
-    },
-    {
-      "type": "divider"
     },
     {
       "type": "heading",
@@ -215,22 +188,15 @@
     },
     {
       "type": "bullet",
-      "text": "Founder-led product development requires narrowing a large market problem into a painful wedge that customers will validate quickly."
+      "text": "Founder-led product needs a painful wedge customers will validate fast."
     },
     {
       "type": "bullet",
-      "text": "Customer discovery is most useful when it reveals repeated workflow bottlenecks, not just general dissatisfaction with existing tools."
+      "text": "Early pilots must balance custom support with repeatable platform patterns."
     },
     {
       "type": "bullet",
-      "text": "Early pilots need to balance custom support with the discipline of identifying repeatable SaaS patterns."
-    },
-    {
-      "type": "bullet",
-      "text": "Fundraising is stronger when product vision is backed by evidence from real users, pilots, and measurable workflow pain."
-    },
-    {
-      "type": "divider"
+      "text": "Fundraising compounds when product vision is backed by pilot evidence."
     },
     {
       "type": "heading",
@@ -238,16 +204,41 @@
       "text": "Visual Diagrams"
     },
     {
-      "type": "callout",
-      "text": "Hardware Development Workflow — Traditional: local tools → manual scripts → physical hardware bottlenecks → delayed debugging. Sahara: cloud simulation → remote access → shared testing → faster validation."
+      "type": "diagram",
+      "title": "Hardware Development Workflow",
+      "before": [
+        "Local tools and IDEs",
+        "Manual integration scripts",
+        "Physical hardware bottlenecks",
+        "Slow, sequential debugging"
+      ],
+      "after": [
+        "Cloud-based simulation",
+        "Remote hardware access",
+        "Shared testing environments",
+        "Faster validation cycles"
+      ]
     },
     {
-      "type": "callout",
-      "text": "MVP Validation Funnel — Discovery interviews → beta users → university pilots → enterprise pilot → investor validation."
+      "type": "diagram",
+      "title": "MVP Validation Funnel",
+      "steps": [
+        "Discovery interviews",
+        "Beta users",
+        "University pilots",
+        "Enterprise pilot",
+        "Investor validation"
+      ]
     },
     {
-      "type": "callout",
-      "text": "Product Wedge — Remote access + simulation + debugging as the initial wedge before broader hardware development platform expansion."
+      "type": "diagram",
+      "title": "Product Wedge",
+      "fields": [
+        "Remote access",
+        "Cloud simulation",
+        "Debugging"
+      ],
+      "note": "Initial wedge before expansion into a broader hardware development platform."
     }
   ]
 }

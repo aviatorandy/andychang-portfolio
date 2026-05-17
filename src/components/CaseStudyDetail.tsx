@@ -53,14 +53,16 @@ export function CaseStudyDetail({ study, content }: CaseStudyDetailProps) {
           <p className="mb-6 text-sm text-[var(--color-ink-subtle)]">{study.role}</p>
         )}
 
-        <div className="mb-10 flex flex-wrap gap-2">
+        <div className="mb-10 grid grid-cols-2 gap-3 sm:grid-cols-4">
           {study.metrics.map((metric) => (
-            <span
+            <div
               key={metric}
-              className="rounded-md border border-[var(--color-border)] bg-[var(--color-surface-elevated)] px-2.5 py-1 text-xs text-[var(--color-ink-muted)]"
+              className="rounded-lg border border-[var(--color-border)] bg-[var(--color-surface-elevated)] px-4 py-3"
             >
-              {metric}
-            </span>
+              <p className="text-sm leading-snug font-semibold text-[var(--color-ink)]">
+                {metric}
+              </p>
+            </div>
           ))}
         </div>
 

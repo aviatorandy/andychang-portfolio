@@ -26,7 +26,12 @@ export const caseStudies: CaseStudy[] = [
     role: "Senior Product Manager",
     description:
       "Architected compliance audit infrastructure from scratch across 3 engineering teams",
-    metrics: ["100% action traceability", "$2M regulatory exposure reduced"],
+    metrics: [
+      "100% MVP audit traceability",
+      "$2M modeled exposure reduced",
+      "Weeks → minutes evidence retrieval",
+      "3 enterprise health systems",
+    ],
     image: "/images/portfolio/omnicell.png",
   },
   {
@@ -47,8 +52,9 @@ export const caseStudies: CaseStudy[] = [
     description:
       "Co-founded cloud-based hardware simulation SaaS from 0 to paying customers",
     metrics: [
-      "$750K raised",
+      "$750K pre-seed raised",
       "50+ discovery interviews",
+      "200 beta users",
       "4 pilot engagements",
     ],
     image: "/images/portfolio/sahara_testing_gif.gif",
@@ -61,9 +67,10 @@ export const caseStudies: CaseStudy[] = [
     description:
       "Scaled internal automation tooling and delivered 200+ API integrations enterprise-wide",
     metrics: [
-      "20,000+ hours saved",
-      "$1M operating costs eliminated",
-      "96% CSAT",
+      "20,000+ hours saved annually",
+      "~$1M operating costs eliminated",
+      "96% CSAT maintained",
+      "Faster enterprise activation",
     ],
     image: "/images/portfolio/yext.png",
   },
@@ -75,8 +82,10 @@ export const caseStudies: CaseStudy[] = [
     description:
       "Automated and standardized employee onboarding workflows for a chat-based HR startup",
     metrics: [
-      "Standardized processes",
-      "Reduced manual onboarding steps",
+      "10% → 35% outreach response",
+      "7% MRR increase",
+      "20+ usability interviews",
+      "Manual coordination reduced",
     ],
     image: "/images/portfolio/harmonize.png",
   },

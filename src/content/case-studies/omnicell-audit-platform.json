@@ -3,10 +3,7 @@
   "blocks": [
     {
       "type": "paragraph",
-      "text": "Led the 0→1 launch of a cloud audit logging platform that created a system of record for regulated user, medication, and system activity across enterprise healthcare environments. The platform improved audit readiness, strengthened customer trust in cloud adoption, and reduced modeled regulatory exposure by approximately $2M."
-    },
-    {
-      "type": "divider"
+      "text": "Led the 0→1 launch of a cloud audit logging platform — a system of record for regulated user, medication, and system activity across enterprise healthcare environments. Improved audit readiness, strengthened cloud adoption trust, and reduced modeled regulatory exposure by ~$2M."
     },
     {
       "type": "heading",
@@ -14,8 +11,8 @@
       "text": "Problem"
     },
     {
-      "type": "paragraph",
-      "text": "Audit data was fragmented across products and systems, making it difficult for healthcare IT, compliance, and internal teams to reconstruct regulated activity quickly and reliably."
+      "type": "bullet",
+      "text": "Audit data was fragmented across products and systems."
     },
     {
       "type": "bullet",
@@ -27,14 +24,7 @@
     },
     {
       "type": "bullet",
-      "text": "Inconsistent audit data increased regulatory, operational, and customer trust risk."
-    },
-    {
-      "type": "bullet",
-      "text": "Internal teams lacked a shared definition of what needed to be logged, retained, and made accessible."
-    },
-    {
-      "type": "divider"
+      "text": "Internal teams lacked shared definitions for what to log, retain, and expose."
     },
     {
       "type": "heading",
@@ -42,15 +32,37 @@
       "text": "My Role"
     },
     {
-      "type": "paragraph",
-      "text": "As Product Manager, I owned product strategy, MVP scope, requirements, stakeholder alignment, and launch execution."
+      "type": "bullet",
+      "text": "Owned product strategy, MVP scope, and launch execution as Product Manager."
     },
     {
-      "type": "paragraph",
-      "text": "I partnered with Engineering, Security, Compliance, Legal, Customer Success, and enterprise stakeholders to define audit requirements, event structure, access controls, and launch priorities."
+      "type": "bullet",
+      "text": "Partnered with Engineering, Security, Compliance, Legal, and Customer Success."
     },
     {
-      "type": "divider"
+      "type": "bullet",
+      "text": "Aligned enterprise stakeholders on audit requirements and access patterns."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Product Approach"
+    },
+    {
+      "type": "bullet",
+      "text": "Scoped MVP to the highest-risk regulated workflows first."
+    },
+    {
+      "type": "bullet",
+      "text": "Defined HIPAA-aligned event requirements with Security and Compliance."
+    },
+    {
+      "type": "bullet",
+      "text": "Designed for self-serve audit review under real time pressure."
+    },
+    {
+      "type": "bullet",
+      "text": "Balanced compliance rigor with engineering feasibility for a scalable launch."
     },
     {
       "type": "heading",
@@ -58,91 +70,62 @@
       "text": "Solution"
     },
     {
-      "type": "paragraph",
-      "text": "Built a centralized cloud audit logging platform that captured security-relevant and compliance-relevant activity across services and made those events searchable through secure, self-serve workflows."
-    },
-    {
-      "type": "bullet",
-      "text": "Standardized audit event schema across services"
-    },
-    {
-      "type": "bullet",
-      "text": "Secure APIs for submitting audit events"
-    },
-    {
-      "type": "bullet",
-      "text": "Search and filtering for audit review workflows"
-    },
-    {
-      "type": "bullet",
-      "text": "Role-based access controls for sensitive audit data"
-    },
-    {
-      "type": "bullet",
-      "text": "Retention policies aligned with healthcare compliance needs"
-    },
-    {
-      "type": "bullet",
-      "text": "System-of-record architecture for regulated user and system activity"
-    },
-    {
-      "type": "divider"
-    },
-    {
-      "type": "heading",
-      "level": 3,
-      "text": "Execution / Product Decisions"
-    },
-    {
-      "type": "bullet",
-      "text": "Defined the MVP around the highest-risk regulated workflows instead of attempting to log every possible event on day one."
-    },
-    {
-      "type": "bullet",
-      "text": "Partnered with Security and Compliance to define HIPAA-aligned audit requirements and evidence needs."
-    },
-    {
-      "type": "bullet",
-      "text": "Worked with Engineering to define event schema, API contracts, retention logic, and access controls."
-    },
-    {
-      "type": "bullet",
-      "text": "Validated audit review workflows with Customer Success and enterprise stakeholders."
-    },
-    {
-      "type": "bullet",
-      "text": "Balanced compliance rigor with engineering feasibility to keep the platform scalable and launchable."
-    },
-    {
-      "type": "bullet",
-      "text": "Created shared definitions for auditability, traceability, retention, and access across multiple product teams."
-    },
-    {
-      "type": "divider"
+      "type": "card-grid",
+      "items": [
+        {
+          "title": "Standardized event schema",
+          "description": "Shared structure across services with room for context-specific metadata."
+        },
+        {
+          "title": "Secure submission APIs",
+          "description": "Reliable ingestion for audit events from product services."
+        },
+        {
+          "title": "Audit search & filtering",
+          "description": "Self-serve workflows for compliance and customer evidence retrieval."
+        },
+        {
+          "title": "Role-based access controls",
+          "description": "Tight permissioning over sensitive audit data."
+        },
+        {
+          "title": "Retention policies",
+          "description": "Aligned with healthcare compliance requirements."
+        },
+        {
+          "title": "System of record",
+          "description": "Durable architecture for regulated user and system activity."
+        }
+      ]
     },
     {
       "type": "heading",
       "level": 3,
-      "text": "Tradeoffs & Product Decisions"
+      "text": "Key Product Decisions"
     },
     {
-      "type": "bullet",
-      "text": "Coverage vs launch speed: Prioritized the highest-risk MVP audit events first to deliver meaningful compliance value without blocking launch on long-tail event coverage."
+      "type": "decision",
+      "decision": "Coverage vs launch speed",
+      "tradeoff": "Highest-risk events first instead of full long-tail coverage.",
+      "outcome": "Meaningful compliance value at launch without blocking on completeness."
     },
     {
-      "type": "bullet",
-      "text": "Standardization vs team flexibility: Defined a shared event schema while allowing services to submit context-specific metadata."
+      "type": "decision",
+      "decision": "Standardization vs team flexibility",
+      "tradeoff": "Shared schema with service-specific metadata fields.",
+      "outcome": "Consistent audit surface that still fit each service's domain."
     },
     {
-      "type": "bullet",
-      "text": "Self-serve access vs security: Enabled searchable audit workflows while enforcing role-based access controls for sensitive data."
+      "type": "decision",
+      "decision": "Self-serve access vs security",
+      "tradeoff": "Searchable workflows behind strict role-based access.",
+      "outcome": "Compliance teams retrieved evidence directly without expanding risk."
     },
     {
-      "type": "bullet",
-      "text": "Compliance depth vs usability: Designed audit review around real investigation workflows so compliance teams could use the platform under time pressure."
-    },
-    {
-      "type": "divider"
+      "type": "decision",
+      "decision": "Compliance depth vs usability",
+      "tradeoff": "Designed review around real investigation flows, not raw log dumps.",
+      "outcome": "Adopted by teams under time pressure during audits."
     },
     {
       "type": "heading",
@@ -151,15 +134,15 @@
     },
     {
       "type": "bullet",
-      "text": "Achieved 100% traceability for defined security-relevant and compliance-relevant MVP events."
+      "text": "100% traceability for defined MVP security and compliance events."
     },
     {
       "type": "bullet",
-      "text": "Reduced modeled regulatory exposure by approximately $2M."
+      "text": "~$2M modeled regulatory exposure reduced."
     },
     {
       "type": "bullet",
-      "text": "Reduced audit preparation from weeks of manual investigation to minutes through self-serve audit access."
+      "text": "Audit evidence retrieval reduced from weeks to minutes."
     },
     {
       "type": "bullet",
@@ -167,14 +150,11 @@
     },
     {
       "type": "bullet",
-      "text": "Improved enterprise readiness by giving customers stronger evidence of compliance, security, and operational control."
+      "text": "Strengthened enterprise readiness for cloud expansion."
     },
     {
       "type": "bullet",
-      "text": "Created a scalable audit foundation for future cloud platform expansion."
-    },
-    {
-      "type": "divider"
+      "text": "Created a scalable audit foundation for future platform growth."
     },
     {
       "type": "heading",
@@ -191,22 +171,15 @@
     },
     {
       "type": "bullet",
-      "text": "Number of systems/services submitting audit events"
+      "text": "Services submitting audit events"
     },
     {
       "type": "bullet",
-      "text": "Number of enterprise deployments"
+      "text": "Enterprise deployments"
     },
     {
       "type": "bullet",
       "text": "Compliance and security review readiness"
-    },
-    {
-      "type": "bullet",
-      "text": "Customer adoption readiness for cloud workflows"
-    },
-    {
-      "type": "divider"
     },
     {
       "type": "heading",
@@ -215,18 +188,15 @@
     },
     {
       "type": "bullet",
-      "text": "Strong platform products are often invisible when they work well. Their value comes from reducing risk, increasing trust, and giving teams a reliable foundation to move faster."
+      "text": "Strong platform products are often invisible — value comes from reducing risk and earning trust."
     },
     {
       "type": "bullet",
-      "text": "In regulated enterprise products, the product challenge is not just building the capability — it is defining the right system of record, aligning stakeholders on what 'complete' means, and making the workflow usable enough that teams rely on it."
+      "text": "In regulated systems, the hard problem is aligning stakeholders on what 'complete' means."
     },
     {
       "type": "bullet",
-      "text": "The most important MVP decision was narrowing audit coverage to the highest-risk workflows first, then creating a scalable schema for future expansion."
-    },
-    {
-      "type": "divider"
+      "text": "Narrow MVP scope plus a scalable schema beats trying to log everything on day one."
     },
     {
       "type": "heading",
@@ -234,16 +204,45 @@
       "text": "Visual Diagrams"
     },
     {
-      "type": "callout",
-      "text": "Audit Logging System Map — Product services → audit event API → centralized audit store → secure search interface → compliance/customer review."
+      "type": "diagram",
+      "title": "Before vs After Audit Workflow",
+      "before": [
+        "Manual investigation across fragmented logs",
+        "Weeks of prep before each audit",
+        "Inconsistent evidence per service",
+        "Limited self-serve access"
+      ],
+      "after": [
+        "Centralized audit store",
+        "Search and filter in minutes",
+        "Standardized evidence schema",
+        "Self-serve compliance access"
+      ]
     },
     {
-      "type": "callout",
-      "text": "Before vs After Audit Workflow — Before: manual investigation across fragmented logs. After: centralized search, filtering, and evidence retrieval."
+      "type": "diagram",
+      "title": "Audit Logging System Map",
+      "steps": [
+        "Product services",
+        "Audit event API",
+        "Centralized audit store",
+        "Secure search UI",
+        "Compliance / customer review"
+      ]
     },
     {
-      "type": "callout",
-      "text": "Audit Event Schema — Event type | Actor | Action | Object | Timestamp | Source system | Metadata | Retention category"
+      "type": "diagram",
+      "title": "Audit Event Schema",
+      "fields": [
+        "event_type",
+        "actor",
+        "action",
+        "object",
+        "timestamp",
+        "source_system",
+        "metadata",
+        "retention_category"
+      ]
     }
   ]
 }
