@@ -1,174 +1,253 @@
 {
-  "title": "Automating Efficiency Using Data @ Marketing Tech B2B SaaS Company (Yext)",
+  "title": "Automating Enterprise Data Matching Workflows @ Yext",
   "blocks": [
     {
-      "type": "heading",
-      "level": 4,
-      "text": "Project Overview"
-    },
-    {
       "type": "paragraph",
-      "text": "Yext is a New York-based digital presence platform that helps multi-location brands maintain consistent and accurate information across platforms like Google, Facebook, and Yelp. One of the biggest challenges in onboarding enterprise clients was manually matching large datasets to ensure data accuracy and synchronization—a time-intensive and error-prone process."
-    },
-    {
-      "type": "paragraph",
-      "text": "To solve this, I developed an automation tool that streamlined data processing, enhanced operational efficiency, and accelerated client onboarding while reducing errors and saving costs."
+      "text": "Built and scaled a data matching automation workflow at Yext to reduce manual enterprise onboarding work, improve data accuracy, and accelerate client activation across publisher networks. The solution saved 20,000+ work hours annually, eliminated approximately $1M in operating costs, and maintained 96% CSAT."
     },
     {
       "type": "divider"
     },
     {
       "type": "heading",
-      "level": 4,
-      "text": "Problem (The Challenge)"
+      "level": 3,
+      "text": "Problem"
     },
     {
       "type": "paragraph",
-      "text": "💡 Manual data matching was inefficient and costly"
+      "text": "Enterprise client onboarding required teams to manually match large datasets across publishers such as Google, Yelp, Tripadvisor, and Yahoo. The process was slow, error-prone, and difficult to scale as customer data volume grew."
     },
     {
       "type": "bullet",
-      "text": "Onboarding enterprise clients required sifting through thousands of data rows to find exact matches across publishers (e.g., Google, Yelp, Tripadvisor, Yahoo)."
+      "text": "Teams manually reviewed thousands of data rows to identify accurate matches."
     },
     {
       "type": "bullet",
-      "text": "This process was time-consuming, error-prone, and labor-intensive, leading to delays in client activation and platform syncing."
+      "text": "Data discrepancies created delays in client activation and platform syncing."
     },
     {
       "type": "bullet",
-      "text": "Teams relied on manual verification, increasing human errors and operational bottlenecks."
+      "text": "Manual verification increased operational cost and introduced human error."
+    },
+    {
+      "type": "bullet",
+      "text": "The onboarding process lacked a scalable workflow for repeatable data validation."
     },
     {
       "type": "divider"
     },
     {
       "type": "heading",
-      "level": 4,
-      "text": "Solution & Execution (My Role & Impact)"
+      "level": 3,
+      "text": "My Role"
     },
     {
       "type": "paragraph",
-      "text": "As Platform Product Manager, I identified this inefficiency and took the initiative to automate data matching using Python-based scripting & AI-enhanced validation."
-    },
-    {
-      "type": "paragraph",
-      "text": "✅ Product Innovation & Automation:"
-    },
-    {
-      "type": "bullet",
-      "text": "Took a Python course to explore automation & scripting solutions."
-    },
-    {
-      "type": "bullet",
-      "text": "Built an MVP tool to validate healthcare professionals' data, ensuring regulatory accuracy."
-    },
-    {
-      "type": "bullet",
-      "text": "Expanded the automation tool across industries, scaling its impact for other enterprise clients."
-    },
-    {
-      "type": "paragraph",
-      "text": "✅ Cross-Functional Collaboration:"
-    },
-    {
-      "type": "bullet",
-      "text": "Partnered with engineers & data teams to refine algorithms and improve automation accuracy."
-    },
-    {
-      "type": "bullet",
-      "text": "Engaged with sales & enterprise clients to ensure the tool met onboarding and compliance needs."
-    },
-    {
-      "type": "bullet",
-      "text": "Developed a scalable, repeatable process that enhanced data integrity & operational workflows."
-    },
-    {
-      "type": "paragraph",
-      "text": "✅ Impact on Efficiency & Cost Savings:"
-    },
-    {
-      "type": "bullet",
-      "text": "Automated client onboarding & data validation, reducing manual work and improving speed to launch."
-    },
-    {
-      "type": "bullet",
-      "text": "Standardized data matching accuracy, ensuring fewer discrepancies in platform synchronization."
+      "text": "As Platform Product Manager, I identified the operational bottleneck, built an initial automation MVP, partnered with Engineering and Data teams to improve accuracy, and helped scale the workflow across enterprise onboarding use cases."
     },
     {
       "type": "divider"
     },
     {
       "type": "heading",
-      "level": 4,
+      "level": 3,
+      "text": "Solution"
+    },
+    {
+      "type": "paragraph",
+      "text": "Developed an automation workflow that improved data matching and validation across publisher datasets, reducing manual review and creating a repeatable process for enterprise client onboarding."
+    },
+    {
+      "type": "bullet",
+      "text": "Automated matching logic for large datasets"
+    },
+    {
+      "type": "bullet",
+      "text": "Data validation workflows for enterprise onboarding"
+    },
+    {
+      "type": "bullet",
+      "text": "Exception handling for records requiring manual review"
+    },
+    {
+      "type": "bullet",
+      "text": "Repeatable workflow patterns across multiple industries and publisher networks"
+    },
+    {
+      "type": "bullet",
+      "text": "Improved reporting around match quality and operational efficiency"
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Execution / Product Decisions"
+    },
+    {
+      "type": "bullet",
+      "text": "Identified a high-volume manual workflow consuming significant operational time during enterprise onboarding."
+    },
+    {
+      "type": "bullet",
+      "text": "Learned Python scripting to prototype an automation MVP and validate feasibility quickly."
+    },
+    {
+      "type": "bullet",
+      "text": "Built an initial tool to validate healthcare professional data where accuracy and compliance were especially important."
+    },
+    {
+      "type": "bullet",
+      "text": "Partnered with Engineering and Data teams to refine matching logic, improve accuracy, and scale the workflow."
+    },
+    {
+      "type": "bullet",
+      "text": "Expanded the automation pattern across additional industries and enterprise clients."
+    },
+    {
+      "type": "bullet",
+      "text": "Worked with Sales and client-facing teams to ensure the workflow supported onboarding timelines and client expectations."
+    },
+    {
+      "type": "bullet",
+      "text": "Standardized the process to reduce manual review while preserving escalation paths for uncertain matches."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Tradeoffs & Product Decisions"
+    },
+    {
+      "type": "bullet",
+      "text": "Automation vs accuracy: Automated high-confidence matches while preserving manual review for ambiguous cases."
+    },
+    {
+      "type": "bullet",
+      "text": "Speed vs trust: Prioritized match quality and exception handling so teams trusted the output enough to use it."
+    },
+    {
+      "type": "bullet",
+      "text": "Prototype vs scale: Used a Python MVP to prove value quickly, then partnered with technical teams to improve durability and scalability."
+    },
+    {
+      "type": "bullet",
+      "text": "Industry-specific needs vs repeatable platform: Started with healthcare provider data, then generalized the workflow for broader enterprise use cases."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
       "text": "Results & Impact"
     },
     {
-      "type": "paragraph",
-      "text": "📈 Operational Efficiency Gains:"
+      "type": "bullet",
+      "text": "Saved 20,000+ work hours annually by automating manual data matching workflows."
     },
     {
       "type": "bullet",
-      "text": "Saved 20,000+ work hours annually by automating manual matching."
+      "text": "Reduced operating costs by approximately $1M annually through lower manual review effort."
     },
     {
       "type": "bullet",
-      "text": "Reduced onboarding time, enabling faster client activations."
+      "text": "Maintained 96% CSAT while improving onboarding efficiency."
     },
     {
       "type": "bullet",
-      "text": "Enhanced data accuracy, improving platform reliability across search engines & digital directories."
-    },
-    {
-      "type": "paragraph",
-      "text": "💰 Cost Savings & Business Impact:"
+      "text": "Accelerated enterprise client activation by reducing data validation bottlenecks."
     },
     {
       "type": "bullet",
-      "text": "$1M annual savings from reduced manual labor and improved accuracy."
+      "text": "Improved data accuracy and platform reliability across digital directories and publisher networks."
     },
     {
       "type": "bullet",
-      "text": "Improved accuracy of automated data matching, decreasing manual intervention & errors."
-    },
-    {
-      "type": "paragraph",
-      "text": "📊 Key Metrics Measured:"
-    },
-    {
-      "type": "bullet",
-      "text": "Total # of Matches → Increased successful automated data matches."
-    },
-    {
-      "type": "bullet",
-      "text": "Accuracy of Manual vs. Automated Matching → Improved precision & reduced human errors."
-    },
-    {
-      "type": "bullet",
-      "text": "Work Hours Saved → Quantified operational time efficiencies."
-    },
-    {
-      "type": "bullet",
-      "text": "Cost Savings → $1M annual reduction in labor costs."
+      "text": "Reduced manual intervention by standardizing high-confidence automated matching and exception handling."
     },
     {
       "type": "divider"
     },
     {
       "type": "heading",
-      "level": 4,
-      "text": "Key Learnings & Takeaways"
+      "level": 3,
+      "text": "Metrics Tracked"
     },
     {
-      "type": "paragraph",
-      "text": "🚀 Challenging the Status Quo: Identified inefficiencies in existing workflows and built an AI-powered automation tool to streamline operations."
+      "type": "bullet",
+      "text": "Work hours saved"
     },
     {
-      "type": "paragraph",
-      "text": "📊 Applying Technical Skills to Real-World Problems: Leveraged Python, data science, and automation to solve manual data challenges."
+      "type": "bullet",
+      "text": "Operating cost reduction"
     },
     {
-      "type": "paragraph",
-      "text": "🤝 Cross-Team Collaboration & Buy-In: Partnered with engineers to refine automation algorithms and engaged stakeholders to scale adoption across industries."
+      "type": "bullet",
+      "text": "Match accuracy"
+    },
+    {
+      "type": "bullet",
+      "text": "Manual review rate"
+    },
+    {
+      "type": "bullet",
+      "text": "Enterprise onboarding cycle time"
+    },
+    {
+      "type": "bullet",
+      "text": "Client activation speed"
+    },
+    {
+      "type": "bullet",
+      "text": "CSAT"
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Key Learnings"
+    },
+    {
+      "type": "bullet",
+      "text": "The best automation opportunities often come from repetitive operational workflows with clear decision rules and high volume."
+    },
+    {
+      "type": "bullet",
+      "text": "Prototyping with lightweight technical tools can create enough proof to earn engineering investment."
+    },
+    {
+      "type": "bullet",
+      "text": "Automation only scales when teams trust the output, understand the exceptions, and have a clear path for manual review."
+    },
+    {
+      "type": "bullet",
+      "text": "Strong platform work turns one-off operational pain into repeatable infrastructure that improves speed, cost, and quality."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Visual Diagrams"
+    },
+    {
+      "type": "callout",
+      "text": "Before vs After Data Matching — Before: manual row review → manual verification → delayed activation. After: automated high-confidence matching → exception review → faster sync."
+    },
+    {
+      "type": "callout",
+      "text": "Automation Decision Flow — Input dataset → matching logic → confidence score → auto-match or manual review → publisher sync."
+    },
+    {
+      "type": "callout",
+      "text": "Scaling Pattern — Healthcare provider matching → broader enterprise datasets → repeatable onboarding workflow."
     }
   ]
 }

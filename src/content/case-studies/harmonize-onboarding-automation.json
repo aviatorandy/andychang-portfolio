@@ -1,161 +1,221 @@
 {
-  "title": "Automating & Standardizing Employee Onboarding @ Chat Based HR Company (Harmonize)",
+  "title": "Automating Employee Onboarding Workflows @ Harmonize",
   "blocks": [
     {
       "type": "paragraph",
-      "text": "📌 Project Overview"
-    },
-    {
-      "type": "paragraph",
-      "text": "Harmonize HQ is a chat-based HR platform designed to create a fun and collaborative workplace by streamlining employee onboarding. Early-stage startups often struggle with standardized onboarding due to rapid team changes, evolving jo roles, and a lack of structured processes. To solve this, I led the development of an MVP onboarding automation tool, ensuring consistency, efficiency, and scalability for growing startups."
+      "text": "Led 0→1 development of an onboarding automation MVP for early-stage startups, standardizing role-based onboarding workflows, reducing manual coordination, and improving activation across Harmonize's HR product suite."
     },
     {
       "type": "divider"
     },
     {
       "type": "heading",
-      "level": 4,
-      "text": "Problem (The Challenge)"
+      "level": 3,
+      "text": "Problem"
     },
     {
       "type": "paragraph",
-      "text": "💡 Startups struggle with scalable onboarding solutions"
+      "text": "Startups needed a repeatable onboarding system that stayed flexible as teams changed."
     },
     {
       "type": "bullet",
-      "text": "Rapid role & team changes make structured onboarding difficult."
+      "text": "Manual onboarding created missed steps, inconsistent employee experiences, and heavy founder/operator coordination."
     },
     {
       "type": "bullet",
-      "text": "Existing onboarding systems are rigid and not adaptable for startups."
+      "text": "Existing HR onboarding tools were too rigid for small, fast-changing teams."
     },
     {
       "type": "bullet",
-      "text": "Inefficient manual processes lead to missed steps and inconsistent experiences."
+      "text": "Startups needed role-specific workflows without the overhead of configuring a large HRIS."
+    },
+    {
+      "type": "bullet",
+      "text": "Harmonize needed a stronger activation path from free users into paid HR products."
     },
     {
       "type": "divider"
     },
     {
       "type": "heading",
-      "level": 4,
-      "text": "Solution & Execution (My Role & Impact)"
+      "level": 3,
+      "text": "My Role"
     },
     {
       "type": "paragraph",
-      "text": "As Lead Product Manager, I led 0→1 product development, cross-functional team hiring, and user research to develop an automated, standardized onboarding solution."
-    },
-    {
-      "type": "paragraph",
-      "text": "✅ Product Strategy & MVP Development:"
-    },
-    {
-      "type": "bullet",
-      "text": "Designed an automated onboarding tool with role-specific templates for flexibility."
-    },
-    {
-      "type": "bullet",
-      "text": "Integrated an email scheduler for personalized communication, reducing manual effort."
-    },
-    {
-      "type": "bullet",
-      "text": "Focused on driving product adoption across Harmonize's HR suite."
-    },
-    {
-      "type": "paragraph",
-      "text": "✅ User Research & Iteration:"
-    },
-    {
-      "type": "bullet",
-      "text": "Conducted 20+ usability interviews to refine product positioning based on real user pain points."
-    },
-    {
-      "type": "bullet",
-      "text": "Iterated using data-driven design features that prioritized usability over \"nice-to-haves\"."
-    },
-    {
-      "type": "paragraph",
-      "text": "✅ Business & Revenue Impact:"
-    },
-    {
-      "type": "bullet",
-      "text": "Developed a growth strategy to convert free users into paid product adoption."
-    },
-    {
-      "type": "bullet",
-      "text": "Used scrappy experimentation to test and validate feature effectiveness before full rollout."
+      "text": "As Lead Product Manager, I owned MVP strategy, user research, workflow design, and cross-functional execution from concept to launch."
     },
     {
       "type": "divider"
     },
     {
       "type": "heading",
-      "level": 4,
+      "level": 3,
+      "text": "Solution"
+    },
+    {
+      "type": "paragraph",
+      "text": "Built a lightweight onboarding automation product that helped startup operators create role-specific onboarding workflows, schedule communications, and track completion."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Execution / Product Decisions"
+    },
+    {
+      "type": "bullet",
+      "text": "Defined the MVP around the highest-frequency onboarding jobs: assigning tasks, sending reminders, sharing role-specific resources, and tracking completion."
+    },
+    {
+      "type": "bullet",
+      "text": "Designed configurable onboarding templates by role so teams could standardize repeatable steps while preserving flexibility."
+    },
+    {
+      "type": "bullet",
+      "text": "Added automated email scheduling and reminders to reduce manual coordination for founders and HR operators."
+    },
+    {
+      "type": "bullet",
+      "text": "Prioritized lightweight workflow automation over complex HRIS-style configuration to accelerate adoption and reduce setup friction."
+    },
+    {
+      "type": "bullet",
+      "text": "Conducted 20+ usability interviews with startup operators and hiring managers to identify onboarding pain points and adoption blockers."
+    },
+    {
+      "type": "bullet",
+      "text": "Used feedback loops and lightweight experiments to refine positioning, template design, and onboarding task flows."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Tradeoffs & Product Decisions"
+    },
+    {
+      "type": "bullet",
+      "text": "Standardization vs flexibility: Chose role-based templates instead of fully custom workflows so startups could launch quickly while still adapting onboarding by function."
+    },
+    {
+      "type": "bullet",
+      "text": "Speed vs completeness: Prioritized the core onboarding loop over advanced HRIS features to validate demand and reduce MVP complexity."
+    },
+    {
+      "type": "bullet",
+      "text": "Automation vs human control: Automated reminders and scheduled communication while keeping operators in control of final content and sequencing."
+    },
+    {
+      "type": "bullet",
+      "text": "Free-to-paid conversion: Designed the MVP to create clear value during onboarding while exposing users to adjacent paid HR workflows."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
       "text": "Results & Impact"
     },
     {
-      "type": "paragraph",
-      "text": "📈 Product Adoption & Engagement:"
+      "type": "bullet",
+      "text": "Increased outreach response rates from 10% to 35% by refining product positioning around startup onboarding pain points."
     },
     {
       "type": "bullet",
-      "text": "Increased startup adoption of the MVP, driving broader HR suite engagement."
+      "text": "Increased monthly recurring revenue by 7% by improving conversion from free users into paid HR product adoption."
     },
     {
       "type": "bullet",
-      "text": "Boosted outreach response rates from 10% to 35% through refined product positioning."
-    },
-    {
-      "type": "paragraph",
-      "text": "💰 Revenue Growth & Efficiency Gains:"
+      "text": "Reduced manual onboarding coordination through automated templates, reminders, and scheduled communication."
     },
     {
       "type": "bullet",
-      "text": "Increased monthly recurring revenue by 7% by driving free users to paid products."
+      "text": "Improved consistency of new-hire onboarding by standardizing repeatable role-based workflows."
     },
     {
       "type": "bullet",
-      "text": "Reduced onboarding time and improved completion rates for new hires."
-    },
-    {
-      "type": "paragraph",
-      "text": "📊 Key Metrics Measured:"
-    },
-    {
-      "type": "bullet",
-      "text": "Total # of candidates onboarded → Tracked user engagement & adoption."
-    },
-    {
-      "type": "bullet",
-      "text": "% of onboarding completed → Measured process efficiency."
-    },
-    {
-      "type": "bullet",
-      "text": "Time to onboarding completion → Reduced inefficiencies in workflow."
-    },
-    {
-      "type": "bullet",
-      "text": "# of startups using Harmonize MVP & other products → Quantified product stickiness."
+      "text": "Created a reusable onboarding workflow foundation supporting broader HR suite engagement."
     },
     {
       "type": "divider"
     },
     {
       "type": "heading",
-      "level": 4,
-      "text": "Key Learnings & Takeaways"
+      "level": 3,
+      "text": "Metrics Tracked"
     },
     {
-      "type": "paragraph",
-      "text": "🚀 0→1 Product Development: Drove MVP from concept to launch, requiring rapid iterations, experimentation, and cross-team alignment."
+      "type": "bullet",
+      "text": "Onboarding completion rate"
     },
     {
-      "type": "paragraph",
-      "text": "📊 Data-Driven Decision Making: Applied A/B testing, user feedback, and analytics to prioritize features that directly solved user pain points."
+      "type": "bullet",
+      "text": "Time to onboarding completion"
     },
     {
-      "type": "paragraph",
-      "text": "🤝 Process Standardization & Communication: Established Scrum methodologies, JIRA workflows, and Slack-based communication to keep teams aligned."
+      "type": "bullet",
+      "text": "Number of startups activating onboarding workflows"
+    },
+    {
+      "type": "bullet",
+      "text": "Free-to-paid conversion rate"
+    },
+    {
+      "type": "bullet",
+      "text": "Outreach response rate"
+    },
+    {
+      "type": "bullet",
+      "text": "Engagement with adjacent Harmonize HR products"
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Key Learnings"
+    },
+    {
+      "type": "bullet",
+      "text": "For early-stage teams, the best onboarding product is not the most configurable one — it is the one that helps teams get started quickly while still supporting lightweight customization."
+    },
+    {
+      "type": "bullet",
+      "text": "Workflow automation works best when it reduces coordination burden without removing human judgment."
+    },
+    {
+      "type": "bullet",
+      "text": "Positioning mattered as much as functionality: reframing the product around startup onboarding consistency improved response rates from 10% to 35%."
+    },
+    {
+      "type": "bullet",
+      "text": "MVP success depended on narrowing the first use case, validating the core loop, and avoiding enterprise HR complexity too early."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Visual Diagrams"
+    },
+    {
+      "type": "callout",
+      "text": "Before vs After Onboarding Flow — Before: founder manually sends tasks, reminders, docs, and follow-ups. After: role template → automated task list → scheduled reminders → completion tracking."
+    },
+    {
+      "type": "callout",
+      "text": "Workflow Automation System — Admin selects role template → system generates checklist → reminders trigger by schedule/status → employee completes tasks → admin tracks completion."
+    },
+    {
+      "type": "callout",
+      "text": "Product Decision Matrix — Decision | Why it mattered | Tradeoff | Outcome"
     }
   ]
 }
