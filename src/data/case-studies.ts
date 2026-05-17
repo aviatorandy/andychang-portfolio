@@ -16,7 +16,7 @@ export const caseStudies: CaseStudy[] = [
     role: "Senior Product Manager",
     description:
       "Built agentic LLM workflows to automate customer issue resolution in regulated healthcare",
-    metrics: ["2,000+ cases automated", "$220K saved annually"],
+    metrics: ["2,000+ cases automated", "~$220K saved annually", "Human-in-the-loop guardrails", "Healthcare compliance traceability"],
     image: "/images/portfolio/omnicell.png",
   },
   {

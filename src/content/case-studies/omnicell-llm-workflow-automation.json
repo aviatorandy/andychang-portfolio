@@ -2,16 +2,8 @@
   "title": "LLM Workflow Automation at Omnicell",
   "blocks": [
     {
-      "type": "heading",
-      "level": 3,
-      "text": "Overview"
-    },
-    {
       "type": "paragraph",
-      "text": "Designed and shipped agentic LLM workflows that triage, research, and resolve customer support cases in a regulated healthcare environment — reducing manual handling while maintaining compliance guardrails."
-    },
-    {
-      "type": "divider"
+      "text": "Designed and shipped agentic LLM workflows that helped triage, research, and resolve customer support and data quality cases in a regulated healthcare environment. The system reduced manual handling, improved resolution speed, and maintained compliance guardrails through human review, evaluation criteria, and audit logging."
     },
     {
       "type": "heading",
@@ -19,11 +11,24 @@
       "text": "Problem"
     },
     {
-      "type": "paragraph",
-      "text": "Customer issue resolution required significant manual effort across support and clinical operations teams. High case volume, strict healthcare regulations, and fragmented knowledge bases slowed resolution times and increased cost per case."
+      "type": "bullet",
+      "text": "Support and operations teams manually researched repetitive data quality and customer issue cases."
     },
     {
-      "type": "divider"
+      "type": "bullet",
+      "text": "Case context was fragmented across systems, slowing investigation and resolution."
+    },
+    {
+      "type": "bullet",
+      "text": "Teams needed automation, but high-risk healthcare workflows required human review and auditability."
+    },
+    {
+      "type": "bullet",
+      "text": "Without structured workflows, resolution quality varied by case complexity and operator experience."
+    },
+    {
+      "type": "bullet",
+      "text": "Manual handling created unnecessary cost and slowed customer response times."
     },
     {
       "type": "heading",
@@ -31,11 +36,37 @@
       "text": "My Role"
     },
     {
-      "type": "paragraph",
-      "text": "As Senior Product Manager, I owned product strategy, workflow design, evaluation criteria, and launch execution — partnering with engineering, security, and customer success to ship in a regulated environment."
+      "type": "bullet",
+      "text": "Owned product strategy, workflow design, evaluation criteria, risk guardrails, and launch execution as Senior Product Manager."
     },
     {
-      "type": "divider"
+      "type": "bullet",
+      "text": "Partnered with Engineering, Security, Customer Success, Support, and clinical operations to define automation eligibility and quality requirements."
+    },
+    {
+      "type": "bullet",
+      "text": "Defined which case types were safe to automate, where human review was required, and how quality would be measured before broader rollout."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Product Approach"
+    },
+    {
+      "type": "bullet",
+      "text": "Prioritized repetitive, high-volume case types with clear resolution patterns before expanding to ambiguous workflows."
+    },
+    {
+      "type": "bullet",
+      "text": "Defined automation eligibility rules based on case risk, available context, and confidence thresholds."
+    },
+    {
+      "type": "bullet",
+      "text": "Built human-in-the-loop checkpoints before scaling to reduce compliance and quality risk."
+    },
+    {
+      "type": "bullet",
+      "text": "Defined quality thresholds before rollout to prevent automation from creating downstream support or compliance issues."
     },
     {
       "type": "heading",
@@ -43,40 +74,194 @@
       "text": "Solution"
     },
     {
-      "type": "paragraph",
-      "text": "Partnered with engineering to build agentic workflows that retrieve context from internal systems, draft resolutions, and route edge cases to humans."
-    },
-    {
-      "type": "bullet",
-      "text": "Defined evaluation criteria and quality thresholds for automated resolutions"
-    },
-    {
-      "type": "bullet",
-      "text": "Built human-in-the-loop checkpoints for ambiguous or high-risk cases"
-    },
-    {
-      "type": "bullet",
-      "text": "Implemented audit logging for every automated action"
-    },
-    {
-      "type": "divider"
+      "type": "card-grid",
+      "items": [
+        {
+          "title": "Case triage and classification",
+          "description": "Automated categorization of incoming cases by type, risk level, and available context."
+        },
+        {
+          "title": "Context retrieval",
+          "description": "Pulled relevant data from internal knowledge bases and support systems to inform each resolution."
+        },
+        {
+          "title": "LLM-generated recommendations",
+          "description": "AI-drafted resolution suggestions and recommended next actions surfaced per case."
+        },
+        {
+          "title": "Human-in-the-loop review",
+          "description": "Mandatory review checkpoints for ambiguous, sensitive, or low-confidence cases."
+        },
+        {
+          "title": "Escalation routing",
+          "description": "Automatic escalation for cases below confidence thresholds or missing required context."
+        },
+        {
+          "title": "Audit logging",
+          "description": "Full traceability of automated recommendations and actions for healthcare compliance review."
+        }
+      ]
     },
     {
       "type": "heading",
       "level": 3,
-      "text": "Results and Impact"
+      "text": "Workflow Design"
+    },
+    {
+      "type": "diagram",
+      "title": "LLM Workflow System Map",
+      "steps": [
+        "Customer case",
+        "Case classifier",
+        "Context retrieval",
+        "LLM recommendation",
+        "Confidence / risk check",
+        "Human review or resolution",
+        "Audit log"
+      ]
+    },
+    {
+      "type": "diagram",
+      "title": "Human-in-the-Loop Decision Flow",
+      "before": [
+        "High confidence + low risk",
+        "Clear resolution pattern",
+        "Sufficient context available"
+      ],
+      "after": [
+        "Low confidence or high risk",
+        "Ambiguous or sensitive case",
+        "Missing context or no clear pattern"
+      ],
+      "note": "Before column → automated draft/resolution. After column → human review queue or escalation."
+    },
+    {
+      "type": "diagram",
+      "title": "Input / Workflow / Output",
+      "steps": [
+        "Input: support or data quality case",
+        "Triage + context retrieval",
+        "LLM recommendation",
+        "Confidence check",
+        "Human review or auto-resolve",
+        "Output: resolution + audit log"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Tradeoffs & Product Decisions"
+    },
+    {
+      "type": "decision",
+      "decision": "Automation vs risk",
+      "tradeoff": "Automated low-risk, repetitive cases first; routed ambiguous or sensitive cases to human review.",
+      "outcome": "Meaningful automation gains without exposing regulated workflows to unreviewed AI output."
+    },
+    {
+      "type": "decision",
+      "decision": "Speed vs quality",
+      "tradeoff": "Optimized for resolution speed only after defining quality thresholds and review checkpoints.",
+      "outcome": "Teams trusted the system enough to adopt it in production operations."
+    },
+    {
+      "type": "decision",
+      "decision": "AI autonomy vs compliance",
+      "tradeoff": "LLMs assisted triage and resolution, but every automated action was logged and reviewable.",
+      "outcome": "Maintained the traceability required for healthcare compliance."
+    },
+    {
+      "type": "decision",
+      "decision": "Coverage vs reliability",
+      "tradeoff": "Focused MVP on case types with strong resolution patterns and available context.",
+      "outcome": "High acceptance rate on automated suggestions in the initial rollout."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Results & Impact"
     },
     {
       "type": "bullet",
-      "text": "2,000+ cases automated with measurable quality controls"
+      "text": "Automated 2,000+ support and data quality cases through AI-assisted workflows."
     },
     {
       "type": "bullet",
-      "text": "$220K in annual savings"
+      "text": "Reduced manual effort by approximately $220K annually."
     },
     {
       "type": "bullet",
-      "text": "Maintained traceability required for healthcare compliance"
+      "text": "Improved resolution speed by reducing repetitive case research and manual triage."
+    },
+    {
+      "type": "bullet",
+      "text": "Maintained traceability required for healthcare compliance through audit logging."
+    },
+    {
+      "type": "bullet",
+      "text": "Created a reusable workflow foundation for future AI-assisted operations use cases."
+    },
+    {
+      "type": "bullet",
+      "text": "Reduced operational burden while preserving human oversight for high-risk cases."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Metrics Tracked"
+    },
+    {
+      "type": "bullet",
+      "text": "Number of cases automated"
+    },
+    {
+      "type": "bullet",
+      "text": "Manual effort reduced"
+    },
+    {
+      "type": "bullet",
+      "text": "Annual cost savings"
+    },
+    {
+      "type": "bullet",
+      "text": "Human review / escalation rate"
+    },
+    {
+      "type": "bullet",
+      "text": "AI recommendation acceptance rate"
+    },
+    {
+      "type": "bullet",
+      "text": "Time to resolution"
+    },
+    {
+      "type": "bullet",
+      "text": "Audit traceability for automated actions"
+    },
+    {
+      "type": "bullet",
+      "text": "Case types eligible for automation"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Key Learnings"
+    },
+    {
+      "type": "bullet",
+      "text": "AI workflow automation is most effective when focused on repetitive, high-volume workflows with clear resolution patterns."
+    },
+    {
+      "type": "bullet",
+      "text": "In regulated environments, the product challenge is not just automation — it is designing the right balance of autonomy, human review, and traceability."
+    },
+    {
+      "type": "bullet",
+      "text": "Human-in-the-loop systems build trust because teams can review, override, and improve AI-generated recommendations."
+    },
+    {
+      "type": "bullet",
+      "text": "Evaluation criteria and escalation paths are essential before scaling LLM workflows into production operations."
     }
   ]
 }
