@@ -97,6 +97,8 @@ function Diagram({
   title,
   before,
   after,
+  beforeLabel,
+  afterLabel,
   steps,
   fields,
   note,
@@ -104,6 +106,8 @@ function Diagram({
   title: string;
   before?: string[];
   after?: string[];
+  beforeLabel?: string;
+  afterLabel?: string;
   steps?: string[];
   fields?: string[];
   note?: string;
@@ -118,7 +122,7 @@ function Diagram({
         <div className="grid gap-4 sm:grid-cols-2">
           <div>
             <p className="mb-2 text-xs font-semibold tracking-wide text-[var(--color-ink-subtle)] uppercase">
-              Before
+              {beforeLabel ?? "Before"}
             </p>
             <ul className="space-y-1.5 text-sm text-[var(--color-ink-muted)]">
               {before.map((s) => (
@@ -130,7 +134,7 @@ function Diagram({
           </div>
           <div>
             <p className="mb-2 text-xs font-semibold tracking-wide text-[var(--color-ink-subtle)] uppercase">
-              After
+              {afterLabel ?? "After"}
             </p>
             <ul className="space-y-1.5 text-sm text-[var(--color-ink-muted)]">
               {after.map((s) => (
@@ -176,6 +180,74 @@ function Diagram({
       {note && (
         <p className="mt-3 text-xs text-[var(--color-ink-subtle)]">{note}</p>
       )}
+    </figure>
+  );
+}
+
+function Matrix({
+  title,
+  columns,
+  rows,
+}: {
+  title: string;
+  columns: string[];
+  rows: Array<{ cells: string[]; highlighted?: boolean }>;
+}) {
+  const lastColIndex = columns.length - 1;
+  return (
+    <figure className="rounded-lg border border-[var(--color-border)] bg-[var(--color-surface-elevated)] p-5">
+      <figcaption className="mb-4 text-sm font-semibold text-[var(--color-ink)]">
+        {title}
+      </figcaption>
+      <div className="space-y-3">
+        {rows.map((row, i) => {
+          const headerCell = row.cells[0];
+          const tagCell = row.cells[lastColIndex];
+          const middleCells = row.cells.slice(1, lastColIndex);
+          const middleColumns = columns.slice(1, lastColIndex);
+          return (
+            <div
+              key={i}
+              className={`rounded-md border bg-[var(--color-surface)] p-4 ${
+                row.highlighted
+                  ? "border-[var(--color-ink-subtle)]"
+                  : "border-[var(--color-border)]"
+              }`}
+            >
+              <div className="mb-3 flex flex-wrap items-baseline justify-between gap-3">
+                <p className="text-sm font-semibold text-[var(--color-ink)]">
+                  {headerCell}
+                </p>
+                {tagCell && (
+                  <span
+                    className={`rounded-full border px-2 py-0.5 text-xs font-medium ${
+                      row.highlighted
+                        ? "border-[var(--color-ink-subtle)] bg-[var(--color-surface-elevated)] text-[var(--color-ink)]"
+                        : "border-[var(--color-border)] bg-[var(--color-surface-elevated)] text-[var(--color-ink-subtle)]"
+                    }`}
+                  >
+                    {tagCell}
+                  </span>
+                )}
+              </div>
+              {middleCells.length > 0 && (
+                <dl className="grid gap-3 sm:grid-cols-2">
+                  {middleCells.map((cell, j) => (
+                    <div key={j}>
+                      <dt className="text-xs font-medium tracking-wide text-[var(--color-ink-subtle)] uppercase">
+                        {middleColumns[j]}
+                      </dt>
+                      <dd className="mt-0.5 text-sm leading-relaxed text-[var(--color-ink-muted)]">
+                        {cell}
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
+              )}
+            </div>
+          );
+        })}
+      </div>
     </figure>
   );
 }
@@ -257,9 +329,20 @@ export function CaseStudyContent({ blocks }: CaseStudyContentProps) {
           title={block.title}
           before={block.before}
           after={block.after}
+          beforeLabel={block.beforeLabel}
+          afterLabel={block.afterLabel}
           steps={block.steps}
           fields={block.fields}
           note={block.note}
+        />
+      );
+    } else if (block.type === "matrix") {
+      nodes.push(
+        <Matrix
+          key={`mx-${key++}`}
+          title={block.title}
+          columns={block.columns}
+          rows={block.rows}
         />
       );
     } else {

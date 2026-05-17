@@ -13,10 +13,15 @@ export const caseStudies: CaseStudy[] = [
     slug: "omnicell-llm-workflow-automation",
     company: "Omnicell",
     title: "LLM Workflow Automation",
-    role: "Senior Product Manager",
+    role: "Product Manager",
     description:
-      "Built agentic LLM workflows to automate customer issue resolution in regulated healthcare",
-    metrics: ["2,000+ cases automated", "~$220K saved annually", "Human-in-the-loop guardrails", "Healthcare compliance traceability"],
+      "Built AI-assisted workflows that triage, research, and resolve customer issue cases in regulated healthcare with human-in-the-loop guardrails",
+    metrics: [
+      "2,000+ AI-assisted cases resolved",
+      "~$220K saved annually",
+      "Human-in-the-loop guardrails",
+      "Healthcare compliance traceability",
+    ],
     image: "/images/portfolio/omnicell.png",
   },
   {
@@ -37,11 +42,16 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "omnicell-auth-rearchitecture",
     company: "Omnicell",
-    title: "Auth Re-architecture",
-    role: "Senior Product Manager",
+    title: "Pragmatic Auth Re-architecture",
+    role: "Product Manager",
     description:
-      "Redesigned authentication strategy to unblock enterprise customer onboarding",
-    metrics: ["95% of customers unblocked", "$1M+ revenue accelerated"],
+      "Chose a pragmatic enterprise auth path that reused the existing foundation with targeted improvements to unblock customers and accelerate revenue",
+    metrics: [
+      "95% of affected customers unblocked",
+      "$1M+ revenue accelerated",
+      "Reduced onboarding friction",
+      "Pragmatic auth migration strategy",
+    ],
     image: "/images/portfolio/omnicell.png",
   },
   {

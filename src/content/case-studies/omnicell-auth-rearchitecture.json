@@ -1,17 +1,9 @@
 {
-  "title": "Auth Re-architecture at Omnicell",
+  "title": "Pragmatic Auth Re-architecture at Omnicell",
   "blocks": [
     {
-      "type": "heading",
-      "level": 3,
-      "text": "Overview"
-    },
-    {
       "type": "paragraph",
-      "text": "Owned the product strategy for re-architecting authentication to support enterprise SSO, delegated access, and faster onboarding — removing a critical blocker to revenue."
-    },
-    {
-      "type": "divider"
+      "text": "Owned product strategy for an enterprise authentication initiative that balanced long-term platform scalability with near-term customer adoption. After evaluating a newer identity provider approach, we chose to extend the existing legacy authentication foundation with targeted improvements rather than force customers through a high-friction migration. This pragmatic path unblocked 95% of affected enterprise customers and accelerated $1M+ in revenue delayed by authentication limitations."
     },
     {
       "type": "heading",
@@ -20,10 +12,27 @@
     },
     {
       "type": "paragraph",
-      "text": "Legacy authentication patterns couldn't support enterprise identity requirements. Deals were delayed or lost because customers couldn't onboard teams under their existing security policies."
+      "text": "Enterprise customers needed secure onboarding and access patterns that fit their operational realities, but the path to modernization was not straightforward. A newer identity provider solution offered a cleaner long-term architecture, but migrating customers too quickly risked slowing adoption, increasing implementation complexity, and delaying revenue."
     },
     {
-      "type": "divider"
+      "type": "bullet",
+      "text": "A newer IdP-based approach was more scalable long term, but introduced migration friction for existing enterprise customers."
+    },
+    {
+      "type": "bullet",
+      "text": "Reusing the legacy authentication foundation was faster for adoption, but required targeted improvements to support enterprise onboarding needs."
+    },
+    {
+      "type": "bullet",
+      "text": "Customers needed smoother access and onboarding flows without being forced into a disruptive auth migration."
+    },
+    {
+      "type": "bullet",
+      "text": "Sales and Customer Success needed a faster path to unblock revenue-delaying authentication issues."
+    },
+    {
+      "type": "bullet",
+      "text": "Engineering needed a practical migration path that improved the current system without creating unnecessary one-off workarounds."
     },
     {
       "type": "heading",
@@ -32,10 +41,11 @@
     },
     {
       "type": "paragraph",
-      "text": "As Senior Product Manager, I mapped customer onboarding friction across sales, CS, and engineering — prioritizing capabilities by revenue impact and sequencing delivery to unblock the largest accounts first."
+      "text": "As Product Manager, I owned product strategy, customer discovery, requirements, stakeholder alignment, and rollout sequencing."
     },
     {
-      "type": "divider"
+      "type": "paragraph",
+      "text": "I partnered with Engineering, Security, Customer Success, Sales, and enterprise stakeholders to evaluate the tradeoff between a new scalable IdP approach and a lower-friction path that extended the existing authentication foundation. I helped prioritize the path that reduced customer friction, accelerated adoption, and preserved room for future platform modernization."
     },
     {
       "type": "heading",
@@ -43,32 +53,267 @@
       "text": "Solution"
     },
     {
-      "type": "bullet",
-      "text": "Partnered with security and platform teams on migration paths"
+      "type": "paragraph",
+      "text": "We chose a pragmatic auth strategy: reuse the existing legacy authentication foundation, add targeted improvements to reduce onboarding friction, and sequence delivery around the customers most blocked by authentication limitations."
     },
     {
-      "type": "bullet",
-      "text": "Prioritized enterprise SSO and delegated access patterns"
-    },
-    {
-      "type": "bullet",
-      "text": "Aligned GTM teams on rollout sequencing per customer segment"
-    },
-    {
-      "type": "divider"
+      "type": "card-grid",
+      "items": [
+        {
+          "title": "Targeted auth flow improvements",
+          "description": "Focused enhancements to existing authentication flows where they were creating onboarding blockers."
+        },
+        {
+          "title": "Reduced onboarding friction",
+          "description": "Smoother access patterns for enterprise customers without forcing immediate IdP migration."
+        },
+        {
+          "title": "Sequenced rollout",
+          "description": "Delivery prioritized around customers with the largest adoption blockers and revenue impact."
+        },
+        {
+          "title": "Preserved future optionality",
+          "description": "Improvements were structured to keep a path open to a more scalable identity architecture later."
+        },
+        {
+          "title": "Cross-functional alignment",
+          "description": "Engineering, Security, Sales, and Customer Success aligned on the same customer readiness path."
+        },
+        {
+          "title": "Enterprise compatibility",
+          "description": "Support for existing customer access patterns and security requirements without one-off workarounds."
+        }
+      ]
     },
     {
       "type": "heading",
       "level": 3,
-      "text": "Results and Impact"
+      "text": "Execution and Stakeholder Management"
     },
     {
       "type": "bullet",
-      "text": "95% of affected enterprise customers unblocked"
+      "text": "Evaluated a newer scalable identity provider approach against customer migration cost, implementation complexity, and adoption risk."
     },
     {
       "type": "bullet",
-      "text": "$1M+ in revenue accelerated that had been held up by auth limitations"
+      "text": "Determined that extending the existing authentication foundation would unblock customers faster than forcing a new IdP migration."
+    },
+    {
+      "type": "bullet",
+      "text": "Prioritized improvements that reduced onboarding friction while preserving a path to future identity modernization."
+    },
+    {
+      "type": "bullet",
+      "text": "Sequenced rollout around customers with the largest adoption blockers and revenue impact."
+    },
+    {
+      "type": "bullet",
+      "text": "Partnered with Security and Engineering to ensure improvements met enterprise requirements without increasing implementation burden."
+    },
+    {
+      "type": "bullet",
+      "text": "Aligned Sales and Customer Success on the customer readiness path so blocked accounts could move forward faster."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Key Product Decisions / Tradeoffs"
+    },
+    {
+      "type": "decision",
+      "decision": "Future-state architecture vs near-term adoption",
+      "tradeoff": "A newer IdP solution was cleaner long term, but would have created migration friction for existing customers.",
+      "outcome": "Chose a lower-friction path that reused the legacy foundation and improved adoption speed."
+    },
+    {
+      "type": "decision",
+      "decision": "Technical purity vs customer activation",
+      "tradeoff": "Avoided over-rotating toward the ideal architecture when the urgent business problem was blocked onboarding.",
+      "outcome": "Unblocked 95% of affected customers and accelerated $1M+ in revenue."
+    },
+    {
+      "type": "decision",
+      "decision": "Modernization vs migration risk",
+      "tradeoff": "Improved the current auth foundation instead of forcing a disruptive migration.",
+      "outcome": "Reduced customer implementation burden while preserving future modernization optionality."
+    },
+    {
+      "type": "decision",
+      "decision": "Standardization vs pragmatic compatibility",
+      "tradeoff": "Balanced scalable identity patterns with compatibility for existing customer workflows.",
+      "outcome": "Reduced one-off friction while supporting broader enterprise adoption."
+    },
+    {
+      "type": "decision",
+      "decision": "Revenue impact vs engineering complexity",
+      "tradeoff": "Sequenced improvements based on customer impact, revenue blockers, and implementation effort.",
+      "outcome": "Focused engineering effort on the highest-leverage adoption blockers first."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Results & Impact"
+    },
+    {
+      "type": "bullet",
+      "text": "Unblocked 95% of affected enterprise customers."
+    },
+    {
+      "type": "bullet",
+      "text": "Accelerated $1M+ in revenue delayed by authentication limitations."
+    },
+    {
+      "type": "bullet",
+      "text": "Reduced onboarding friction by improving the existing authentication path instead of forcing a disruptive IdP migration."
+    },
+    {
+      "type": "bullet",
+      "text": "Improved GTM confidence by giving Sales and Customer Success a clearer path to unblock affected accounts."
+    },
+    {
+      "type": "bullet",
+      "text": "Preserved future optionality for a more scalable identity architecture while solving the immediate adoption problem."
+    },
+    {
+      "type": "bullet",
+      "text": "Created a pragmatic enterprise auth strategy grounded in customer adoption, not just technical modernization."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Metrics Tracked"
+    },
+    {
+      "type": "bullet",
+      "text": "Percentage of affected customers unblocked"
+    },
+    {
+      "type": "bullet",
+      "text": "Revenue accelerated"
+    },
+    {
+      "type": "bullet",
+      "text": "Customer onboarding completion rate"
+    },
+    {
+      "type": "bullet",
+      "text": "Time to onboard affected enterprise accounts"
+    },
+    {
+      "type": "bullet",
+      "text": "Authentication-related deployment blockers"
+    },
+    {
+      "type": "bullet",
+      "text": "Customer migration friction"
+    },
+    {
+      "type": "bullet",
+      "text": "Adoption readiness by customer segment"
+    },
+    {
+      "type": "bullet",
+      "text": "Engineering effort vs customer impact"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Key Learnings"
+    },
+    {
+      "type": "bullet",
+      "text": "The best platform decision is not always the cleanest technical architecture. Sometimes the right product strategy is the path customers can actually adopt."
+    },
+    {
+      "type": "bullet",
+      "text": "Enterprise auth is both a technical system and an adoption/revenue lever."
+    },
+    {
+      "type": "bullet",
+      "text": "Modernization needs to be sequenced around customer migration friction, not just internal architecture goals."
+    },
+    {
+      "type": "bullet",
+      "text": "In enterprise healthcare, reducing implementation burden can matter as much as adding new platform capabilities."
+    },
+    {
+      "type": "bullet",
+      "text": "Strong PM judgment means balancing future-state scalability with near-term customer activation."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Visual Diagrams"
+    },
+    {
+      "type": "diagram",
+      "title": "Auth Strategy Decision Flow",
+      "beforeLabel": "Option A — New scalable IdP",
+      "before": [
+        "Cleaner future architecture",
+        "Higher migration friction",
+        "Slower customer adoption",
+        "Delayed revenue recognition"
+      ],
+      "afterLabel": "Option B — Extend existing auth (Selected)",
+      "after": [
+        "Targeted improvements to existing foundation",
+        "Lower migration friction",
+        "Faster customer adoption",
+        "Accelerated revenue activation"
+      ],
+      "note": "Selected path: Option B. Preserves future optionality to revisit IdP modernization once the immediate adoption blockers are resolved."
+    },
+    {
+      "type": "diagram",
+      "title": "Adoption Flow — Before vs After",
+      "before": [
+        "Auth limitation",
+        "Onboarding friction",
+        "Delayed activation",
+        "Delayed revenue"
+      ],
+      "after": [
+        "Existing auth foundation + targeted improvements",
+        "Smoother onboarding",
+        "Customers unblocked",
+        "Revenue accelerated"
+      ]
+    },
+    {
+      "type": "matrix",
+      "title": "Product Tradeoff Matrix",
+      "columns": [
+        "Decision",
+        "Customer impact",
+        "Engineering complexity",
+        "Migration friction",
+        "Revenue impact",
+        "Selected approach"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "New IdP migration",
+            "High future value",
+            "High complexity",
+            "High friction",
+            "Slower near-term revenue",
+            "Not selected for MVP"
+          ]
+        },
+        {
+          "cells": [
+            "Extend existing auth foundation",
+            "High adoption value",
+            "Moderate complexity",
+            "Lower friction",
+            "Faster revenue acceleration",
+            "Selected"
+          ],
+          "highlighted": true
+        }
+      ]
     }
   ]
 }

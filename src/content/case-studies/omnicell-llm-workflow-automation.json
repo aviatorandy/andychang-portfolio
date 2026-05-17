@@ -11,24 +11,28 @@
       "text": "Problem"
     },
     {
-      "type": "bullet",
-      "text": "Support and operations teams manually researched repetitive data quality and customer issue cases."
+      "type": "paragraph",
+      "text": "Support and operations teams manually researched repetitive data quality and customer issue cases. Case context was fragmented across systems, slowing investigation and resolution. Teams needed automation, but regulated healthcare workflows required human review, quality thresholds, and auditability."
     },
     {
       "type": "bullet",
-      "text": "Case context was fragmented across systems, slowing investigation and resolution."
+      "text": "Support and operations teams manually researched repetitive cases."
     },
     {
       "type": "bullet",
-      "text": "Teams needed automation, but high-risk healthcare workflows required human review and auditability."
+      "text": "Case context was fragmented across systems."
     },
     {
       "type": "bullet",
-      "text": "Without structured workflows, resolution quality varied by case complexity and operator experience."
+      "text": "Resolution quality varied by case complexity and operator experience."
     },
     {
       "type": "bullet",
-      "text": "Manual handling created unnecessary cost and slowed customer response times."
+      "text": "High-risk healthcare workflows required reviewable and traceable AI assistance."
+    },
+    {
+      "type": "bullet",
+      "text": "Manual handling increased operational cost and slowed customer response times."
     },
     {
       "type": "heading",
@@ -36,21 +40,59 @@
       "text": "My Role"
     },
     {
-      "type": "bullet",
-      "text": "Owned product strategy, workflow design, evaluation criteria, risk guardrails, and launch execution as Senior Product Manager."
+      "type": "paragraph",
+      "text": "As Product Manager, I owned product strategy, workflow design, evaluation criteria, risk guardrails, and launch execution."
     },
     {
-      "type": "bullet",
-      "text": "Partnered with Engineering, Security, Customer Success, Support, and clinical operations to define automation eligibility and quality requirements."
-    },
-    {
-      "type": "bullet",
-      "text": "Defined which case types were safe to automate, where human review was required, and how quality would be measured before broader rollout."
+      "type": "paragraph",
+      "text": "I partnered with Engineering, Security, Customer Success, Support, and clinical operations to define which case types were safe to automate, where human review was required, and how quality would be measured before broader rollout."
     },
     {
       "type": "heading",
       "level": 3,
-      "text": "Product Approach"
+      "text": "Solution"
+    },
+    {
+      "type": "paragraph",
+      "text": "Built AI-assisted workflows that retrieved relevant context, generated draft resolutions, routed edge cases to humans, and logged automated actions for traceability."
+    },
+    {
+      "type": "card-grid",
+      "items": [
+        {
+          "title": "Case triage and classification",
+          "description": "Automated categorization of incoming cases by type, risk level, and available context."
+        },
+        {
+          "title": "Context retrieval",
+          "description": "Pulled relevant data from internal knowledge and support systems to inform each resolution."
+        },
+        {
+          "title": "LLM-generated recommendations",
+          "description": "AI-drafted resolution suggestions and recommended next actions surfaced per case."
+        },
+        {
+          "title": "Human-in-the-loop review",
+          "description": "Mandatory review checkpoints for ambiguous, sensitive, or low-confidence cases."
+        },
+        {
+          "title": "Escalation routing",
+          "description": "Automatic routing for cases below confidence thresholds or missing required context."
+        },
+        {
+          "title": "Audit logging",
+          "description": "Full traceability of automated recommendations and actions for compliance review."
+        },
+        {
+          "title": "Evaluation criteria",
+          "description": "Quality, relevance, and compliance thresholds defined before rollout."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Execution and Stakeholder Management"
     },
     {
       "type": "bullet",
@@ -66,115 +108,44 @@
     },
     {
       "type": "bullet",
-      "text": "Defined quality thresholds before rollout to prevent automation from creating downstream support or compliance issues."
+      "text": "Partnered with Engineering to design workflows for triage, retrieval, recommendation generation, and escalation routing."
+    },
+    {
+      "type": "bullet",
+      "text": "Partnered with Security and Compliance to ensure AI-assisted actions remained traceable and reviewable."
+    },
+    {
+      "type": "bullet",
+      "text": "Used Support and Customer Success feedback to refine prompts, routing logic, and exception handling."
     },
     {
       "type": "heading",
       "level": 3,
-      "text": "Solution"
-    },
-    {
-      "type": "card-grid",
-      "items": [
-        {
-          "title": "Case triage and classification",
-          "description": "Automated categorization of incoming cases by type, risk level, and available context."
-        },
-        {
-          "title": "Context retrieval",
-          "description": "Pulled relevant data from internal knowledge bases and support systems to inform each resolution."
-        },
-        {
-          "title": "LLM-generated recommendations",
-          "description": "AI-drafted resolution suggestions and recommended next actions surfaced per case."
-        },
-        {
-          "title": "Human-in-the-loop review",
-          "description": "Mandatory review checkpoints for ambiguous, sensitive, or low-confidence cases."
-        },
-        {
-          "title": "Escalation routing",
-          "description": "Automatic escalation for cases below confidence thresholds or missing required context."
-        },
-        {
-          "title": "Audit logging",
-          "description": "Full traceability of automated recommendations and actions for healthcare compliance review."
-        }
-      ]
-    },
-    {
-      "type": "heading",
-      "level": 3,
-      "text": "Workflow Design"
-    },
-    {
-      "type": "diagram",
-      "title": "LLM Workflow System Map",
-      "steps": [
-        "Customer case",
-        "Case classifier",
-        "Context retrieval",
-        "LLM recommendation",
-        "Confidence / risk check",
-        "Human review or resolution",
-        "Audit log"
-      ]
-    },
-    {
-      "type": "diagram",
-      "title": "Human-in-the-Loop Decision Flow",
-      "before": [
-        "High confidence + low risk",
-        "Clear resolution pattern",
-        "Sufficient context available"
-      ],
-      "after": [
-        "Low confidence or high risk",
-        "Ambiguous or sensitive case",
-        "Missing context or no clear pattern"
-      ],
-      "note": "Before column → automated draft/resolution. After column → human review queue or escalation."
-    },
-    {
-      "type": "diagram",
-      "title": "Input / Workflow / Output",
-      "steps": [
-        "Input: support or data quality case",
-        "Triage + context retrieval",
-        "LLM recommendation",
-        "Confidence check",
-        "Human review or auto-resolve",
-        "Output: resolution + audit log"
-      ]
-    },
-    {
-      "type": "heading",
-      "level": 3,
-      "text": "Tradeoffs & Product Decisions"
+      "text": "Key Product Decisions / Tradeoffs"
     },
     {
       "type": "decision",
       "decision": "Automation vs risk",
-      "tradeoff": "Automated low-risk, repetitive cases first; routed ambiguous or sensitive cases to human review.",
-      "outcome": "Meaningful automation gains without exposing regulated workflows to unreviewed AI output."
+      "tradeoff": "Automated low-risk, repetitive cases first while routing ambiguous or sensitive cases to human review.",
+      "outcome": "Reduced manual effort without exposing regulated workflows to unreviewed AI output."
     },
     {
       "type": "decision",
       "decision": "Speed vs quality",
       "tradeoff": "Optimized for resolution speed only after defining quality thresholds and review checkpoints.",
-      "outcome": "Teams trusted the system enough to adopt it in production operations."
+      "outcome": "Teams trusted the system enough to use it in production operations."
     },
     {
       "type": "decision",
       "decision": "AI autonomy vs compliance",
-      "tradeoff": "LLMs assisted triage and resolution, but every automated action was logged and reviewable.",
-      "outcome": "Maintained the traceability required for healthcare compliance."
+      "tradeoff": "Used LLMs to assist triage and resolution while keeping actions logged and reviewable.",
+      "outcome": "Maintained traceability required for healthcare compliance."
     },
     {
       "type": "decision",
       "decision": "Coverage vs reliability",
-      "tradeoff": "Focused MVP on case types with strong resolution patterns and available context.",
-      "outcome": "High acceptance rate on automated suggestions in the initial rollout."
+      "tradeoff": "Focused the MVP on case types with strong resolution patterns and available context.",
+      "outcome": "Created a reliable foundation before expanding to more complex workflows."
     },
     {
       "type": "heading",
@@ -183,7 +154,7 @@
     },
     {
       "type": "bullet",
-      "text": "Automated 2,000+ support and data quality cases through AI-assisted workflows."
+      "text": "Resolved 2,000+ support and data quality cases through AI-assisted workflows."
     },
     {
       "type": "bullet",
@@ -195,11 +166,11 @@
     },
     {
       "type": "bullet",
-      "text": "Maintained traceability required for healthcare compliance through audit logging."
+      "text": "Maintained healthcare compliance traceability through audit logging."
     },
     {
       "type": "bullet",
-      "text": "Created a reusable workflow foundation for future AI-assisted operations use cases."
+      "text": "Created a reusable foundation for future AI-assisted operations use cases."
     },
     {
       "type": "bullet",
@@ -212,7 +183,7 @@
     },
     {
       "type": "bullet",
-      "text": "Number of cases automated"
+      "text": "Number of AI-assisted cases resolved"
     },
     {
       "type": "bullet",
@@ -249,7 +220,7 @@
     },
     {
       "type": "bullet",
-      "text": "AI workflow automation is most effective when focused on repetitive, high-volume workflows with clear resolution patterns."
+      "text": "AI workflow automation works best when focused on repetitive, high-volume workflows with clear resolution patterns."
     },
     {
       "type": "bullet",
@@ -262,6 +233,67 @@
     {
       "type": "bullet",
       "text": "Evaluation criteria and escalation paths are essential before scaling LLM workflows into production operations."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Visual Diagrams"
+    },
+    {
+      "type": "diagram",
+      "title": "LLM Workflow System Map",
+      "steps": [
+        "Customer case",
+        "Case classifier",
+        "Context retrieval",
+        "LLM recommendation",
+        "Confidence / risk check",
+        "Human review or resolution",
+        "Audit log"
+      ]
+    },
+    {
+      "type": "diagram",
+      "title": "Human-in-the-Loop Decision Flow",
+      "beforeLabel": "Auto-assist path",
+      "before": [
+        "High confidence + low risk",
+        "Clear resolution pattern",
+        "Sufficient context available",
+        "Output: AI-generated draft resolution or recommended action"
+      ],
+      "afterLabel": "Human review path",
+      "after": [
+        "Low confidence or high risk",
+        "Ambiguous or sensitive case",
+        "Missing context or no clear pattern",
+        "Output: human review queue or escalation"
+      ]
+    },
+    {
+      "type": "card-grid",
+      "items": [
+        {
+          "title": "Input",
+          "description": "Support or data quality case"
+        },
+        {
+          "title": "AI output",
+          "description": "Draft resolution and recommended next action"
+        },
+        {
+          "title": "Guardrail",
+          "description": "Confidence and risk check before action"
+        },
+        {
+          "title": "Human action",
+          "description": "Approve, edit, reject, or escalate"
+        },
+        {
+          "title": "Traceability",
+          "description": "Recommendation and action logged for audit review"
+        }
+      ]
     }
   ]
 }

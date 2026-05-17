@@ -15,9 +15,18 @@ export type DiagramBlock = {
   title: string;
   before?: string[];
   after?: string[];
+  beforeLabel?: string;
+  afterLabel?: string;
   steps?: string[];
   fields?: string[];
   note?: string;
+};
+
+export type MatrixBlock = {
+  type: "matrix";
+  title: string;
+  columns: string[];
+  rows: Array<{ cells: string[]; highlighted?: boolean }>;
 };
 
 export type ContentBlock =
@@ -30,7 +39,8 @@ export type ContentBlock =
   | { type: "divider" }
   | CardGridBlock
   | DecisionCardBlock
-  | DiagramBlock;
+  | DiagramBlock
+  | MatrixBlock;
 
 export type CaseStudyContent = {
   title: string;
