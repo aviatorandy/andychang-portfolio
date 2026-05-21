@@ -6,6 +6,7 @@ import { Hero } from "@/components/Hero";
 import { MetricStrip } from "@/components/MetricStrip";
 import { Resume } from "@/components/Resume";
 import { Work } from "@/components/Work";
+import { Writing } from "@/components/Writing";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <About />
         <Work />
         <Resume />
+        <Writing />
         <Connect />
       </main>
       <Footer />
