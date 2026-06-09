@@ -3,7 +3,7 @@
   "blocks": [
     {
       "type": "paragraph",
-      "text": "Built an end-to-end LLM pipeline that transforms thousands of unstructured Amazon reviews into structured product insights — themes, sentiment breakdowns, complaint clusters, feature requests, and evidence-backed recommendations. Processed 20,000+ reviews with 99% JSON validity and 98% faithfulness to source text."
+      "text": "Built an end-to-end AI pipeline that turns thousands of unstructured Amazon reviews into structured product insights — common complaints, top praise, feature requests, sentiment breakdowns, and evidence-backed recommendations. Processed 20,000+ reviews with 99% valid structured outputs and 98% source-backed accuracy. Compressed analysis from hours to minutes using a Large Language Model (LLM) — an AI system trained to understand and generate text."
     },
     {
       "type": "divider"
@@ -15,23 +15,23 @@
     },
     {
       "type": "paragraph",
-      "text": "Product teams often have thousands of reviews but no scalable way to convert them into decision-ready insights. Manual tagging is slow and inconsistent. Generic sentiment tools tell you whether users are positive or negative — not why, which product areas are affected, or what to prioritize."
+      "text": "Product teams often have thousands of reviews but no practical way to turn them into decisions. Manual tagging takes hours. Generic sentiment tools only tell you whether customers are positive or negative — not what they're complaining about, what they love, or what to build next."
     },
     {
       "type": "bullet",
-      "text": "Manual review tagging took hours and produced inconsistent taxonomies across analysts."
+      "text": "Manual review tagging created inconsistent categories across reviewers and took hours per product."
     },
     {
       "type": "bullet",
-      "text": "Off-the-shelf sentiment tools lacked product-specific structure and evidence grounding."
+      "text": "Off-the-shelf sentiment tools produced polarity scores (positive/negative) but no product-specific insight."
     },
     {
       "type": "bullet",
-      "text": "Large review corpora could not be processed with standard LLM context windows without chunking and aggregation strategies."
+      "text": "Thousands of reviews cannot fit into a single model prompt due to model input limits, so a batching and combining strategy was required."
     },
     {
       "type": "bullet",
-      "text": "Teams needed outputs they could act on — structured data for roadmap decisions, not just summaries."
+      "text": "Teams needed structured outputs they could act on — not summaries, but data usable in dashboards, exports, or planning docs."
     },
     {
       "type": "divider"
@@ -46,23 +46,23 @@
       "items": [
         {
           "title": "Product Managers",
-          "description": "Prioritizing roadmap opportunities based on what users actually complain about or request."
+          "description": "Prioritizing roadmap opportunities based on what customers actually complain about or ask for."
         },
         {
           "title": "Founders",
-          "description": "Validating product-market fit signals across large unstructured datasets."
+          "description": "Validating product-market fit signals across large sets of real customer feedback."
         },
         {
           "title": "CX Teams",
-          "description": "Identifying recurring complaint clusters to reduce support volume and improve response quality."
+          "description": "Identifying recurring complaint categories to reduce support volume and improve response quality."
         },
         {
           "title": "Growth Teams",
-          "description": "Finding messaging opportunities from what users praise most — social proof and positioning hooks."
+          "description": "Finding positioning and messaging opportunities from what customers praise most."
         },
         {
           "title": "Marketplace Sellers",
-          "description": "Improving listings and product quality based on structured review intelligence."
+          "description": "Improving listings and products based on structured review intelligence."
         }
       ]
     },
@@ -76,7 +76,7 @@
     },
     {
       "type": "callout",
-      "text": "Compress hours of manual review analysis into minutes while preserving source-grounded evidence and structured outputs that can power dashboards, reports, and prioritization workflows."
+      "text": "Compress hours of manual review analysis into minutes while keeping every insight traceable to real customer reviews — so teams can trust the output and act on it."
     },
     {
       "type": "divider"
@@ -84,38 +84,38 @@
     {
       "type": "heading",
       "level": 3,
-      "text": "Solution"
+      "text": "How It Works"
     },
     {
       "type": "paragraph",
-      "text": "An LLM-powered review intelligence pipeline with batch processing, schema-constrained generation, automated validation, and an aggregation layer for cross-batch theme synthesis. Every output is traceable to source review evidence."
+      "text": "An LLM pipeline that cleans, processes, and extracts structured insights from large sets of reviews in batches. The LLM is prompted to return fixed structured outputs using JavaScript Object Notation (JSON), a standard data format — rather than free-form summaries. This makes the output directly usable in dashboards, exports, and planning docs without extra processing. Every insight is tied back to evidence from real reviews."
     },
     {
       "type": "card-grid",
       "items": [
         {
-          "title": "Ingestion & Cleaning",
-          "description": "Imported and normalized review datasets, deduplicated noisy inputs, and filtered low-signal entries before processing."
+          "title": "Import & Clean",
+          "description": "Reviews are imported, normalized, and deduplicated. Low-quality or spam entries are filtered before processing."
         },
         {
-          "title": "Chunked Batch Processing",
-          "description": "Split large corpora into model-safe batches to handle 20,000+ reviews without context window constraints or quality degradation."
+          "title": "Split Into Batches",
+          "description": "Thousands of reviews are divided into smaller groups that fit within model input limits, so the LLM can process the full dataset consistently."
         },
         {
-          "title": "Schema-Constrained Extraction",
-          "description": "Structured prompts with fixed JSON schemas to extract themes, sentiment, complaints, praise, and feature requests in a consistent, machine-readable format."
+          "title": "Structured Output Extraction",
+          "description": "The LLM is prompted with a fixed JSON structure to extract themes, sentiment, complaints, praise, and feature requests from each batch in a consistent, machine-readable format."
         },
         {
           "title": "Automated Validation",
-          "description": "Built JSON validity checks and faithfulness evaluations to catch hallucinated or malformed outputs before aggregation."
+          "description": "Each batch output is checked for valid JSON structure and source-backed accuracy — catching any outputs that are malformed or contain unsupported claims."
         },
         {
-          "title": "Theme Aggregation",
-          "description": "Aggregated findings across batches to surface recurring themes and product opportunities at the full corpus level."
+          "title": "Combine Results",
+          "description": "Results from all batches are combined to surface themes and patterns that appear consistently across the full set of reviews."
         },
         {
-          "title": "Insight Reports",
-          "description": "Generated executive summaries with supporting review evidence — structured for product decisions, not just summarization."
+          "title": "Insight Report",
+          "description": "A final report is generated with supporting evidence from real reviews for each theme — structured for product decisions, not just reading."
         }
       ]
     },
@@ -133,26 +133,26 @@
       "steps": [
         "Import Reviews",
         "Clean & Normalize",
-        "Chunk Batches",
-        "Schema Extraction",
-        "JSON Validation",
-        "Faithfulness Check",
-        "Theme Aggregation",
+        "Split Into Batches",
+        "Extract Themes",
+        "Validate Output",
+        "Check Source Accuracy",
+        "Combine Results",
         "Insight Report"
       ]
     },
     {
       "type": "heading",
       "level": 3,
-      "text": "Structured Output Schema"
+      "text": "Structured Output Format"
     },
     {
       "type": "paragraph",
-      "text": "Each batch produced structured JSON conforming to a fixed schema, enabling downstream use in dashboards, product exports, and prioritization workflows without additional parsing."
+      "text": "Each batch produced output in JavaScript Object Notation (JSON), a standard structured data format. Using a fixed output structure meant results could be used directly in dashboards or planning tools without additional processing."
     },
     {
       "type": "diagram",
-      "title": "Structured Output Fields",
+      "title": "Output Fields",
       "fields": [
         "top_themes",
         "sentiment_breakdown",
@@ -173,28 +173,32 @@
       "text": "Evaluation & Quality Controls"
     },
     {
-      "type": "bullet",
-      "text": "Measured JSON schema validity across all output batches — achieved 99% on evaluation sets."
+      "type": "paragraph",
+      "text": "I built an evaluation set — a test group of reviews with manually verified expected outputs — to measure quality before trusting the pipeline on real datasets."
     },
     {
       "type": "bullet",
-      "text": "Measured faithfulness by sampling generated themes and claims against source review text — achieved 98%."
+      "text": "Structured output validity: did the LLM return clean JSON that could be parsed and used by other tools? Achieved 99% across evaluation sets."
     },
     {
       "type": "bullet",
-      "text": "Checked explicitly for hallucinated claims not supported by any source review in the batch."
+      "text": "Source-backed accuracy: did the themes and summaries match real reviews in the dataset? Achieved 98% when sampling outputs against source reviews."
     },
     {
       "type": "bullet",
-      "text": "Compared generated themes against manually labeled review samples to validate theme quality."
+      "text": "Hallucination checks: did the system avoid unsupported claims — themes or summaries not backed by any review in the batch? Explicit checks were run on each output."
     },
     {
       "type": "bullet",
-      "text": "Re-ran prompts on edge cases and low-confidence batches until outputs were consistently usable."
+      "text": "Duplicate theme checks: did different batches surface the same theme under different names? The combining step was tested to prevent redundancy."
     },
     {
       "type": "bullet",
-      "text": "Validated aggregation logic to ensure cross-batch themes were consistent and not duplicated."
+      "text": "Batch consistency: did different batches on similar review sets produce consistent outputs? Outputs were compared across batches to catch quality variance."
+    },
+    {
+      "type": "bullet",
+      "text": "Human sample review: manually reviewed a sample of AI-generated themes to confirm they matched what a product manager would actually find useful."
     },
     {
       "type": "divider"
@@ -206,27 +210,27 @@
     },
     {
       "type": "decision",
-      "decision": "Structured JSON vs. free-form summaries",
-      "tradeoff": "Free-form summaries are easier to generate but cannot be reused in downstream tools or dashboards.",
-      "outcome": "Schema-constrained output made insights directly consumable by product workflows without additional parsing."
+      "decision": "Structured JSON output vs. free-form summaries",
+      "tradeoff": "Free-form text summaries are easier to generate but can't be reused in dashboards, exports, or planning docs without extra work.",
+      "outcome": "Fixed JSON output made insights directly usable in product tools — no additional processing needed."
     },
     {
       "type": "decision",
-      "decision": "Faithfulness over fluency",
-      "tradeoff": "Optimizing for readable prose produces more polished outputs but harder-to-verify claims.",
-      "outcome": "Prioritized grounding in source reviews — every theme and claim traceable to evidence snippets from real reviews."
+      "decision": "Source-backed accuracy over fluency",
+      "tradeoff": "Polished, readable prose can sound convincing but be harder to verify against the original reviews.",
+      "outcome": "Prioritized accuracy over readability — every claim is tied to evidence snippets from real reviews so teams can verify before acting."
     },
     {
       "type": "decision",
-      "decision": "Actionable themes vs. generic sentiment",
-      "tradeoff": "Sentiment polarity is faster to compute but doesn't tell a PM what to build or fix.",
-      "outcome": "Focused extraction on product areas, feature requests, and complaint clusters — outputs designed for roadmap prioritization."
+      "decision": "Product themes vs. generic sentiment",
+      "tradeoff": "Positive/negative sentiment scores are faster to compute but don't tell a PM what to build or fix.",
+      "outcome": "Focused on extracting product areas, feature requests, and complaint categories — outputs designed to support roadmap decisions."
     },
     {
       "type": "decision",
-      "decision": "Batch processing with aggregation layer",
-      "tradeoff": "Processing all reviews in one call would exceed context limits and reduce output consistency.",
-      "outcome": "Chunked ingestion with a cross-batch aggregation layer handled 20,000+ reviews reliably at consistent quality."
+      "decision": "Batch processing with a combining step",
+      "tradeoff": "Sending all reviews in one prompt would exceed model input limits and reduce output consistency.",
+      "outcome": "Reviews were split into batches and results were combined in a final step — allowing 20,000+ reviews to be processed reliably."
     },
     {
       "type": "divider"
@@ -242,11 +246,11 @@
     },
     {
       "type": "bullet",
-      "text": "Achieved 99% JSON validity on evaluation sets."
+      "text": "Achieved 99% valid structured outputs on evaluation sets."
     },
     {
       "type": "bullet",
-      "text": "Achieved 98% faithfulness to source review text."
+      "text": "Achieved 98% source-backed accuracy — themes and summaries traced back to real reviews."
     },
     {
       "type": "bullet",
@@ -254,7 +258,7 @@
     },
     {
       "type": "bullet",
-      "text": "Turned unstructured review data into structured, roadmap-ready product intelligence with evidence grounding."
+      "text": "Turned unstructured review data into structured, roadmap-ready product intelligence with evidence for every insight."
     },
     {
       "type": "divider"
@@ -274,15 +278,15 @@
     },
     {
       "type": "bullet",
-      "text": "Add severity and opportunity scoring to help teams prioritize themes by impact."
+      "text": "Add severity and opportunity scoring to help teams prioritize themes by likely impact."
     },
     {
       "type": "bullet",
-      "text": "Add integrations with Notion, Airtable, or productboard to push insights directly into planning workflows."
+      "text": "Add integrations with Notion, Airtable, or productboard to push insights directly into planning docs."
     },
     {
       "type": "bullet",
-      "text": "Add a user feedback loop to improve theme classification quality over time."
+      "text": "Add a feedback loop so reviewers can flag or correct AI-generated themes to improve accuracy over time."
     }
   ]
 }

@@ -3,7 +3,7 @@
   "blocks": [
     {
       "type": "paragraph",
-      "text": "Built a RAG-powered dental billing audit system that extracts structured data from Explanation of Benefits documents, retrieves relevant insurance policy and reimbursement rules, and produces evidence-backed discrepancy flags for human review. Reduced per-claim review time from 15 minutes to under 1 minute while improving consistency and explainability."
+      "text": "Built an AI-assisted dental billing audit system that reviews Explanation of Benefits (EOB) documents — the summaries insurers send after processing a dental claim — looks up relevant insurance policy rules, and flags possible billing discrepancies with supporting evidence for human review. Reduced per-claim review time from 15 minutes to under 1 minute while improving consistency and explainability."
     },
     {
       "type": "divider"
@@ -15,11 +15,11 @@
     },
     {
       "type": "paragraph",
-      "text": "Dental EOBs are difficult to interpret because payment logic depends on plan-specific policies, fee schedules, coverage limits, exclusions, deductibles, annual maximums, and procedure-level reimbursement rules. Manual review is slow, inconsistent, and hard to scale."
+      "text": "Dental EOBs are difficult to interpret because payment decisions depend on plan-specific policies, fee schedules, coverage limits, exclusions, deductibles, annual maximums, and procedure-level reimbursement rules. Manual review is slow, inconsistent, and hard to scale."
     },
     {
       "type": "bullet",
-      "text": "Patients often cannot tell whether a claim was paid correctly without understanding plan-specific rules."
+      "text": "Patients often cannot tell whether a claim was paid correctly without understanding their specific plan rules."
     },
     {
       "type": "bullet",
@@ -27,11 +27,11 @@
     },
     {
       "type": "bullet",
-      "text": "Relevant policy language is buried in lengthy plan documents — not surfaced at the point of review."
+      "text": "Relevant policy language is buried in lengthy plan documents — not available at the point of review."
     },
     {
       "type": "bullet",
-      "text": "No scalable system existed to compare claim outcomes against authoritative reimbursement rules."
+      "text": "No scalable system existed to compare claim outcomes against the actual plan rules that should apply."
     },
     {
       "type": "divider"
@@ -50,7 +50,7 @@
         },
         {
           "title": "Dental Billing Teams",
-          "description": "Reviewing reimbursement accuracy at high volume with limited time per claim."
+          "description": "Reviewing reimbursement accuracy across high claim volumes with limited time per claim."
         },
         {
           "title": "Support Staff",
@@ -58,7 +58,7 @@
         },
         {
           "title": "Operators",
-          "description": "Triaging ambiguous flags and managing escalation workflows for complex cases."
+          "description": "Triaging flagged cases and managing escalation for complex or ambiguous claims."
         }
       ]
     },
@@ -72,7 +72,7 @@
     },
     {
       "type": "callout",
-      "text": "Reduce the time required to review an EOB while improving consistency and explainability — without pretending every claim can be fully automated."
+      "text": "Reduce the time it takes to review a dental EOB while making findings more consistent and easier to verify — without pretending every claim can be safely automated."
     },
     {
       "type": "divider"
@@ -80,38 +80,38 @@
     {
       "type": "heading",
       "level": 3,
-      "text": "Solution"
+      "text": "How It Works"
     },
     {
       "type": "paragraph",
-      "text": "A hybrid AI audit workflow combining document parsing, structured rule checks, RAG over imported policy documents, and LLM reasoning for ambiguous cases. Each finding is grounded in retrievable policy evidence and routed to human review when confidence is low."
+      "text": "This is not just a Large Language Model (LLM) reviewing a PDF. It is a hybrid AI workflow with four distinct layers: document extraction, policy lookup, rules-based checks, and AI reasoning. Each layer handles a different part of the problem. Together they produce findings that are consistent, explainable, and grounded in actual source policy documents."
     },
     {
       "type": "card-grid",
       "items": [
         {
-          "title": "EOB Parsing",
-          "description": "Extracts structured claim fields: procedure codes, billed amounts, allowed amounts, paid amounts, patient responsibility, and deductible applied."
+          "title": "EOB Extraction",
+          "description": "Uses Optical Character Recognition (OCR) — software that reads text from scanned documents — to extract key claim fields: procedure codes, billed amount, allowed amount, paid amount, patient responsibility, deductible applied, and plan details."
         },
         {
           "title": "Policy Knowledge Base",
-          "description": "Imported dental insurance policies, CDT code documentation, fee schedules, coverage rules, exclusions, and reimbursement guidelines into a searchable vector store."
+          "description": "Dental insurance policies, fee schedules, coverage rules, exclusions, reimbursement guidelines, and Current Dental Terminology (CDT) procedure code definitions are imported into a searchable knowledge base."
         },
         {
-          "title": "Retrieval-Augmented Reasoning",
-          "description": "Retrieves the most relevant policy sections and fee schedule entries to ground LLM reasoning in authoritative source language."
+          "title": "Policy Lookup (RAG)",
+          "description": "For each claim, the system retrieves the most relevant policy sections before generating a finding. This approach — called Retrieval-Augmented Generation (RAG) — keeps AI reasoning grounded in source documents instead of general knowledge."
         },
         {
-          "title": "Rules Engine",
-          "description": "Deterministic checks for known billing patterns: duplicate codes, unbundling, frequency limit violations, and missing prior authorizations."
+          "title": "Rules-Based Checks",
+          "description": "Automated checks for known billing problems: duplicate procedure codes, unbundled services, frequency limit violations, and missing prior authorizations."
         },
         {
-          "title": "Discrepancy Flags",
-          "description": "Produces 1–3 prioritized, evidence-backed findings per EOB with supporting policy citations and confidence scores."
+          "title": "AI Reasoning",
+          "description": "The LLM interprets complex or ambiguous policy language that rules-based checks cannot handle — such as determining whether a specific exclusion applies to a given procedure."
         },
         {
-          "title": "Human Review Routing",
-          "description": "Low-confidence or high-risk findings are routed to human reviewers rather than surfaced as definitive conclusions."
+          "title": "Human-in-the-Loop Review",
+          "description": "Low-confidence or high-risk findings are flagged for human review instead of being shown as conclusions. The system supports reviewers — it does not replace them."
         }
       ]
     },
@@ -128,10 +128,10 @@
       "title": "End-to-End Audit Pipeline",
       "steps": [
         "EOB Upload",
-        "Parser & OCR",
-        "Structured Claim Data",
-        "Policy Retriever",
-        "Rules Engine + LLM",
+        "OCR Extraction",
+        "Claim Details",
+        "Policy Lookup (RAG)",
+        "Rules Check + AI",
         "Discrepancy Report",
         "Human Review"
       ]
@@ -139,18 +139,18 @@
     {
       "type": "heading",
       "level": 3,
-      "text": "RAG Knowledge Base"
+      "text": "Why RAG?"
     },
     {
       "type": "paragraph",
-      "text": "Policy documents were chunked by benefit category, procedure code range, limitation type, exclusion, and reimbursement rule — making retrieval precise enough to support claim-level reasoning rather than returning irrelevant plan boilerplate."
+      "text": "Retrieval-Augmented Generation (RAG) means the system searches a knowledge base before generating an answer — rather than relying only on what the AI was trained to know. For BillHero, I imported dental insurance policies, fee schedules, reimbursement rules, exclusions, and plan-specific documents into a searchable knowledge base. For each claim, the system retrieves the most relevant policy sections before generating a discrepancy finding. This keeps outputs grounded in actual source documents and reduces hallucinations — unsupported claims the AI might otherwise produce."
     },
     {
       "type": "diagram",
-      "title": "Policy Knowledge Base — Document Types Indexed",
+      "title": "Policy Knowledge Base — What Was Indexed",
       "fields": [
         "Dental insurance policies",
-        "CDT / procedure code definitions",
+        "CDT procedure code definitions",
         "Fee schedules",
         "Coverage rules",
         "Exclusions & limitations",
@@ -168,28 +168,36 @@
       "text": "Evaluation & Quality Controls"
     },
     {
-      "type": "bullet",
-      "text": "Built a labeled evaluation set of EOBs with expected discrepancy findings to measure system output against ground truth."
+      "type": "paragraph",
+      "text": "I built an evaluation set — a test group of labeled EOBs with expected discrepancy findings — to measure how well the system worked before trusting its output."
     },
     {
       "type": "bullet",
-      "text": "Measured extraction accuracy for structured claim fields (procedure codes, amounts, patient responsibility)."
+      "text": "Extraction accuracy: did the system correctly read claim fields like procedure codes, amounts, and deductibles from the EOB?"
     },
     {
       "type": "bullet",
-      "text": "Evaluated retrieval relevance: whether retrieved policy chunks matched the claim's actual benefit category and procedure type."
+      "text": "Retrieval quality: did the policy lookup surface the right sections for the specific claim and procedure being reviewed?"
     },
     {
       "type": "bullet",
-      "text": "Checked explanation faithfulness: whether stated reasons cited real, retrievable policy language."
+      "text": "Source grounding: did each finding trace back to real policy language rather than general AI knowledge?"
     },
     {
       "type": "bullet",
-      "text": "Added confidence thresholds so low-confidence outputs were not surfaced as definitive findings."
+      "text": "Hallucination checks: did the system avoid making unsupported claims — findings that could not be verified in the source policy documents?"
     },
     {
       "type": "bullet",
-      "text": "Designed human review routing for ambiguous and high-risk cases rather than suppressing them."
+      "text": "Precision: when the system flagged a discrepancy, was it actually a real problem worth reviewing?"
+    },
+    {
+      "type": "bullet",
+      "text": "Recall: was the system catching the important discrepancies, or missing cases it should have flagged?"
+    },
+    {
+      "type": "bullet",
+      "text": "Human-in-the-loop routing: did ambiguous and high-risk cases get escalated to a human reviewer instead of being automatically resolved?"
     },
     {
       "type": "divider"
@@ -201,27 +209,27 @@
     },
     {
       "type": "decision",
-      "decision": "Hybrid rules + LLM vs. pure LLM",
-      "tradeoff": "Reimbursement logic requires deterministic checks for known billing violations — LLM alone would miss structured rule failures.",
-      "outcome": "Rules engine handles unambiguous violations; LLM handles interpretation of complex and ambiguous policy language."
+      "decision": "Rules + AI instead of AI alone",
+      "tradeoff": "Using only an LLM would miss clear billing violations that can be caught with simple rules — and would be harder to audit and explain.",
+      "outcome": "Rules-based checks handle unambiguous billing problems. The LLM handles cases where policy language is complex or context-dependent."
     },
     {
       "type": "decision",
-      "decision": "RAG vs. fine-tuning",
-      "tradeoff": "Claim decisions depend on plan-specific policy language that changes frequently and varies by payer.",
-      "outcome": "RAG over imported policy documents grounds reasoning in source material without requiring retraining as policies change."
+      "decision": "RAG instead of fine-tuning",
+      "tradeoff": "Dental plan rules vary by payer and change over time. Retraining a model every time a policy updates is not practical.",
+      "outcome": "RAG lets the system search the most current policy documents at query time — no retraining needed when rules change."
     },
     {
       "type": "decision",
       "decision": "Explainability over full automation",
-      "tradeoff": "Fully automated adjudication would be faster but harder to verify and difficult to trust in a billing context.",
-      "outcome": "Every finding includes supporting policy evidence and a confidence score — outputs are designed for review, not replacement of human judgment."
+      "tradeoff": "Fully automated claim adjudication would be faster but difficult to verify and hard to trust in a billing context.",
+      "outcome": "Every finding includes the policy section it came from and a confidence score. Outputs are designed for human review, not to replace it."
     },
     {
       "type": "decision",
-      "decision": "Route ambiguous cases vs. hide them",
-      "tradeoff": "Surfacing all findings regardless of confidence increases noise and erodes reviewer trust over time.",
-      "outcome": "Low-confidence and high-risk findings route to human review rather than appearing as conclusions — keeps precision high."
+      "decision": "Confidence scoring for routing",
+      "tradeoff": "Showing every finding regardless of confidence would flood reviewers with noise and erode trust in the system.",
+      "outcome": "High-confidence findings are prioritized. Low-confidence cases are routed to a human reviewer rather than surfaced as conclusions."
     },
     {
       "type": "divider"
@@ -267,15 +275,15 @@
     },
     {
       "type": "bullet",
-      "text": "Created an evidence-backed audit flow with policy citations and confidence scoring on every finding."
+      "text": "Every finding includes a policy citation and confidence score — making it easy to verify or escalate."
     },
     {
       "type": "bullet",
-      "text": "Built a simulated evaluation set to validate extraction accuracy, retrieval relevance, and explanation faithfulness."
+      "text": "Built and validated against a simulated evaluation set to confirm extraction accuracy, retrieval quality, and source grounding."
     },
     {
       "type": "bullet",
-      "text": "Demonstrated how RAG-grounded AI can reduce manual review burden while keeping humans in the loop for complex and ambiguous cases."
+      "text": "Demonstrated how RAG-grounded AI can reduce manual review time while keeping a human in the loop for complex and ambiguous cases."
     },
     {
       "type": "divider"
@@ -295,15 +303,15 @@
     },
     {
       "type": "bullet",
-      "text": "Add batch review mode for billing teams processing high claim volumes."
+      "text": "Add a batch review mode for billing teams processing high claim volumes."
     },
     {
       "type": "bullet",
-      "text": "Track precision and recall across larger labeled evaluation datasets."
+      "text": "Track precision and recall across larger labeled evaluation sets."
     },
     {
       "type": "bullet",
-      "text": "Add user feedback loops to improve retrieval quality and discrepancy classification over time."
+      "text": "Add reviewer feedback loops to improve retrieval quality and discrepancy classification over time."
     }
   ]
 }

@@ -109,8 +109,8 @@ export const caseStudies: CaseStudy[] = [
     metrics: [
       "15 min → under 1 min review time",
       "1–3 discrepancies flagged per EOB",
-      "RAG + rules + LLM hybrid",
-      "Evidence-backed audit findings",
+      "Policy lookup + rules + AI",
+      "Evidence-backed findings",
     ],
     image: "/images/portfolio/billhero.png",
   },
@@ -123,8 +123,8 @@ export const caseStudies: CaseStudy[] = [
       "End-to-end LLM pipeline that transforms 20,000+ unstructured reviews into structured themes, complaints, and feature requests for product decision-making",
     metrics: [
       "20,000+ reviews processed",
-      "99% JSON validity",
-      "98% faithfulness to source",
+      "99% valid structured outputs",
+      "98% source-backed accuracy",
       "Hours → minutes analysis",
     ],
     image: "/images/portfolio/review-intelligence.png",
