@@ -2,13 +2,8 @@
   "title": "AI Dental Billing Auditor — BillHero",
   "blocks": [
     {
-      "type": "heading",
-      "level": 3,
-      "text": "Overview"
-    },
-    {
       "type": "paragraph",
-      "text": "Built an LLM + rules hybrid system that audits dental explanation of benefits (EOBs), flags billing discrepancies, and cuts review time from 15 minutes to under one minute per claim."
+      "text": "Built a RAG-powered dental billing audit system that extracts structured data from Explanation of Benefits documents, retrieves relevant insurance policy and reimbursement rules, and produces evidence-backed discrepancy flags for human review. Reduced per-claim review time from 15 minutes to under 1 minute while improving consistency and explainability."
     },
     {
       "type": "divider"
@@ -20,7 +15,64 @@
     },
     {
       "type": "paragraph",
-      "text": "Manual EOB review was slow, error-prone, and didn't scale for billing teams reviewing high claim volumes. Discrepancies were easy to miss under time pressure."
+      "text": "Dental EOBs are difficult to interpret because payment logic depends on plan-specific policies, fee schedules, coverage limits, exclusions, deductibles, annual maximums, and procedure-level reimbursement rules. Manual review is slow, inconsistent, and hard to scale."
+    },
+    {
+      "type": "bullet",
+      "text": "Patients often cannot tell whether a claim was paid correctly without understanding plan-specific rules."
+    },
+    {
+      "type": "bullet",
+      "text": "Billing teams reviewing high volumes frequently miss discrepancies under time pressure."
+    },
+    {
+      "type": "bullet",
+      "text": "Relevant policy language is buried in lengthy plan documents — not surfaced at the point of review."
+    },
+    {
+      "type": "bullet",
+      "text": "No scalable system existed to compare claim outcomes against authoritative reimbursement rules."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Users & Stakeholders"
+    },
+    {
+      "type": "card-grid",
+      "items": [
+        {
+          "title": "Patients",
+          "description": "Trying to understand whether they were billed or reimbursed correctly by their dental plan."
+        },
+        {
+          "title": "Dental Billing Teams",
+          "description": "Reviewing reimbursement accuracy at high volume with limited time per claim."
+        },
+        {
+          "title": "Support Staff",
+          "description": "Explaining claim outcomes and resolving disputes with payers."
+        },
+        {
+          "title": "Operators",
+          "description": "Triaging ambiguous flags and managing escalation workflows for complex cases."
+        }
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Product Goal"
+    },
+    {
+      "type": "callout",
+      "text": "Reduce the time required to review an EOB while improving consistency and explainability — without pretending every claim can be fully automated."
     },
     {
       "type": "divider"
@@ -31,16 +83,37 @@
       "text": "Solution"
     },
     {
-      "type": "bullet",
-      "text": "Combined structured rule checks for known billing patterns with LLM extraction over unstructured EOB fields"
+      "type": "paragraph",
+      "text": "A hybrid AI audit workflow combining document parsing, structured rule checks, RAG over imported policy documents, and LLM reasoning for ambiguous cases. Each finding is grounded in retrievable policy evidence and routed to human review when confidence is low."
     },
     {
-      "type": "bullet",
-      "text": "Designed evaluation sets and human review flows for high-confidence vs. ambiguous flags"
-    },
-    {
-      "type": "bullet",
-      "text": "Built reasoning layer to surface 1–3 actionable discrepancies per claim"
+      "type": "card-grid",
+      "items": [
+        {
+          "title": "EOB Parsing",
+          "description": "Extracts structured claim fields: procedure codes, billed amounts, allowed amounts, paid amounts, patient responsibility, and deductible applied."
+        },
+        {
+          "title": "Policy Knowledge Base",
+          "description": "Imported dental insurance policies, CDT code documentation, fee schedules, coverage rules, exclusions, and reimbursement guidelines into a searchable vector store."
+        },
+        {
+          "title": "Retrieval-Augmented Reasoning",
+          "description": "Retrieves the most relevant policy sections and fee schedule entries to ground LLM reasoning in authoritative source language."
+        },
+        {
+          "title": "Rules Engine",
+          "description": "Deterministic checks for known billing patterns: duplicate codes, unbundling, frequency limit violations, and missing prior authorizations."
+        },
+        {
+          "title": "Discrepancy Flags",
+          "description": "Produces 1–3 prioritized, evidence-backed findings per EOB with supporting policy citations and confidence scores."
+        },
+        {
+          "title": "Human Review Routing",
+          "description": "Low-confidence or high-risk findings are routed to human reviewers rather than surfaced as definitive conclusions."
+        }
+      ]
     },
     {
       "type": "divider"
@@ -48,15 +121,189 @@
     {
       "type": "heading",
       "level": 3,
-      "text": "Results and Impact"
+      "text": "Audit Workflow"
+    },
+    {
+      "type": "diagram",
+      "title": "End-to-End Audit Pipeline",
+      "steps": [
+        "EOB Upload",
+        "Parser & OCR",
+        "Structured Claim Data",
+        "Policy Retriever",
+        "Rules Engine + LLM",
+        "Discrepancy Report",
+        "Human Review"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "RAG Knowledge Base"
+    },
+    {
+      "type": "paragraph",
+      "text": "Policy documents were chunked by benefit category, procedure code range, limitation type, exclusion, and reimbursement rule — making retrieval precise enough to support claim-level reasoning rather than returning irrelevant plan boilerplate."
+    },
+    {
+      "type": "diagram",
+      "title": "Policy Knowledge Base — Document Types Indexed",
+      "fields": [
+        "Dental insurance policies",
+        "CDT / procedure code definitions",
+        "Fee schedules",
+        "Coverage rules",
+        "Exclusions & limitations",
+        "Deductible & annual maximum logic",
+        "Prior authorization requirements",
+        "Reimbursement guidelines"
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Evaluation & Quality Controls"
     },
     {
       "type": "bullet",
-      "text": "Review time reduced from 15 minutes to under 1 minute per claim"
+      "text": "Built a labeled evaluation set of EOBs with expected discrepancy findings to measure system output against ground truth."
     },
     {
       "type": "bullet",
-      "text": "1–3 discrepancies detected per reviewed EOB on average"
+      "text": "Measured extraction accuracy for structured claim fields (procedure codes, amounts, patient responsibility)."
+    },
+    {
+      "type": "bullet",
+      "text": "Evaluated retrieval relevance: whether retrieved policy chunks matched the claim's actual benefit category and procedure type."
+    },
+    {
+      "type": "bullet",
+      "text": "Checked explanation faithfulness: whether stated reasons cited real, retrievable policy language."
+    },
+    {
+      "type": "bullet",
+      "text": "Added confidence thresholds so low-confidence outputs were not surfaced as definitive findings."
+    },
+    {
+      "type": "bullet",
+      "text": "Designed human review routing for ambiguous and high-risk cases rather than suppressing them."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Key Product Decisions"
+    },
+    {
+      "type": "decision",
+      "decision": "Hybrid rules + LLM vs. pure LLM",
+      "tradeoff": "Reimbursement logic requires deterministic checks for known billing violations — LLM alone would miss structured rule failures.",
+      "outcome": "Rules engine handles unambiguous violations; LLM handles interpretation of complex and ambiguous policy language."
+    },
+    {
+      "type": "decision",
+      "decision": "RAG vs. fine-tuning",
+      "tradeoff": "Claim decisions depend on plan-specific policy language that changes frequently and varies by payer.",
+      "outcome": "RAG over imported policy documents grounds reasoning in source material without requiring retraining as policies change."
+    },
+    {
+      "type": "decision",
+      "decision": "Explainability over full automation",
+      "tradeoff": "Fully automated adjudication would be faster but harder to verify and difficult to trust in a billing context.",
+      "outcome": "Every finding includes supporting policy evidence and a confidence score — outputs are designed for review, not replacement of human judgment."
+    },
+    {
+      "type": "decision",
+      "decision": "Route ambiguous cases vs. hide them",
+      "tradeoff": "Surfacing all findings regardless of confidence increases noise and erodes reviewer trust over time.",
+      "outcome": "Low-confidence and high-risk findings route to human review rather than appearing as conclusions — keeps precision high."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Before vs. After"
+    },
+    {
+      "type": "diagram",
+      "title": "Manual Review vs. AI-Assisted Audit",
+      "before": [
+        "15+ minutes per claim",
+        "Reviewer manually searches policy documents",
+        "Inconsistent findings across reviewers",
+        "Discrepancies easy to miss under time pressure",
+        "No policy evidence surfaced at review"
+      ],
+      "after": [
+        "Under 1 minute per claim",
+        "Policy context retrieved and cited automatically",
+        "Consistent structured findings across all claims",
+        "1–3 prioritized discrepancies surfaced per EOB",
+        "Human review focused on ambiguous cases only"
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Results & Impact"
+    },
+    {
+      "type": "bullet",
+      "text": "Reduced per-claim review time from 15 minutes to under 1 minute."
+    },
+    {
+      "type": "bullet",
+      "text": "Surfaced 1–3 likely discrepancies per reviewed EOB on average."
+    },
+    {
+      "type": "bullet",
+      "text": "Created an evidence-backed audit flow with policy citations and confidence scoring on every finding."
+    },
+    {
+      "type": "bullet",
+      "text": "Built a simulated evaluation set to validate extraction accuracy, retrieval relevance, and explanation faithfulness."
+    },
+    {
+      "type": "bullet",
+      "text": "Demonstrated how RAG-grounded AI can reduce manual review burden while keeping humans in the loop for complex and ambiguous cases."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "What I Would Do Next"
+    },
+    {
+      "type": "bullet",
+      "text": "Build payer-specific policy libraries covering major dental insurance carriers."
+    },
+    {
+      "type": "bullet",
+      "text": "Expand CDT procedure code coverage and reimbursement rule depth."
+    },
+    {
+      "type": "bullet",
+      "text": "Add batch review mode for billing teams processing high claim volumes."
+    },
+    {
+      "type": "bullet",
+      "text": "Track precision and recall across larger labeled evaluation datasets."
+    },
+    {
+      "type": "bullet",
+      "text": "Add user feedback loops to improve retrieval quality and discrepancy classification over time."
     }
   ]
 }

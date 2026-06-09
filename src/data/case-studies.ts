@@ -105,10 +105,12 @@ export const caseStudies: CaseStudy[] = [
     title: "AI Dental Billing Auditor",
     role: "Builder / PM",
     description:
-      "LLM + rule-based system auditing dental EOBs and detecting billing discrepancies",
+      "RAG-powered dental EOB audit system that retrieves insurance policies and fee schedules to flag billing discrepancies with evidence-backed findings",
     metrics: [
-      "Review time 15 min → under 1 min",
-      "1–3 discrepancies detected per claim",
+      "15 min → under 1 min review time",
+      "1–3 discrepancies flagged per EOB",
+      "RAG + rules + LLM hybrid",
+      "Evidence-backed audit findings",
     ],
     image: "/images/portfolio/billhero.png",
   },
@@ -116,10 +118,15 @@ export const caseStudies: CaseStudy[] = [
     slug: "review-intelligence-pipeline",
     company: "Independent",
     title: "Review Intelligence Pipeline",
-    role: "Builder",
+    role: "Builder / PM",
     description:
-      "End-to-end LLM pipeline analyzing 20,000+ reviews generating structured product insights",
-    metrics: ["99% JSON validity", "98% faithfulness", "Hours → minutes"],
+      "End-to-end LLM pipeline that transforms 20,000+ unstructured reviews into structured themes, complaints, and feature requests for product decision-making",
+    metrics: [
+      "20,000+ reviews processed",
+      "99% JSON validity",
+      "98% faithfulness to source",
+      "Hours → minutes analysis",
+    ],
     image: "/images/portfolio/review-intelligence.png",
   },
 ];
