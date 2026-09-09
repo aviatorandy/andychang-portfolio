@@ -8,6 +8,7 @@ import billhero from "@/content/case-studies/billhero-ai-dental-billing.json";
 import reviewPipeline from "@/content/case-studies/review-intelligence-pipeline.json";
 import sahara from "@/content/case-studies/sahara-cloud-co-founder-cpo.json";
 import yext from "@/content/case-studies/yext-platform-automation.json";
+import betnowly from "@/content/case-studies/betnowly-social-betting.json";
 
 const contentBySlug: Record<string, CaseStudyContent> = {
   "omnicell-audit-platform": omnicellAudit as CaseStudyContent,
@@ -18,6 +19,7 @@ const contentBySlug: Record<string, CaseStudyContent> = {
   "omnicell-auth-rearchitecture": omnicellAuth as CaseStudyContent,
   "billhero-ai-dental-billing": billhero as CaseStudyContent,
   "review-intelligence-pipeline": reviewPipeline as CaseStudyContent,
+  "betnowly-social-betting": betnowly as CaseStudyContent,
 };
 
 export function getCaseStudyContent(slug: string): CaseStudyContent | undefined {

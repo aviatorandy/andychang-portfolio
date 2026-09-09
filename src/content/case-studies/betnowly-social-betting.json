@@ -1,0 +1,259 @@
+{
+  "title": "BetNowly: Building a Social Betting Loop for Friends",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "A web product for creating, sharing, and settling informal bets between friends — without managing payments or losing track of who owes what."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "The Challenge"
+    },
+    {
+      "type": "paragraph",
+      "text": "Friends make casual bets in conversations, but the terms, participants, and results are easily forgotten or disputed. BetNowly needed to preserve the social simplicity of a group-chat bet while creating enough structure to make the outcome trustworthy. The core loop had to be fast enough that users would choose it over just texting — and reliable enough that they'd trust the result."
+    },
+    {
+      "type": "diagram",
+      "title": "The Bet Lifecycle",
+      "steps": [
+        "Create",
+        "Share",
+        "Accept",
+        "Settle",
+        "Rematch"
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Decision One: Remove Participation Friction"
+    },
+    {
+      "type": "paragraph",
+      "text": "The first drop-off risk was the invite wall. If an invited friend had to create an account before accepting a bet, most wouldn't. I allowed users to engage with a shared bet link before creating a full account, then claim their participation history afterward. This reduced the setup required before the social interaction could begin."
+    },
+    {
+      "type": "card-grid",
+      "items": [
+        {
+          "title": "Shareable Links",
+          "description": "Each bet generates a unique link that can be shared in any messaging app — no app install required to view or accept."
+        },
+        {
+          "title": "Guest Participation",
+          "description": "Invited users can accept and interact with a bet before creating an account, keeping the social moment intact."
+        },
+        {
+          "title": "Account Claiming",
+          "description": "Guests can later create an account and claim their full bet history — nothing is lost from anonymous participation."
+        },
+        {
+          "title": "Friends Autocomplete",
+          "description": "Repeat collaborators surface automatically, reducing the friction of inviting the same friends across multiple bets."
+        },
+        {
+          "title": "One-Tap Templates",
+          "description": "Common bet types are pre-structured so users can create a valid bet in seconds without filling out a form from scratch."
+        },
+        {
+          "title": "Cross-Device Tickets",
+          "description": "Bet state persists across devices — a bet created on mobile can be managed and settled from desktop."
+        }
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Decision Two: Build Trust Into the Product Model"
+    },
+    {
+      "type": "paragraph",
+      "text": "Early users were entering verification instructions — \"check ESPN\" or \"whoever scored more wins\" — into the Judge field. This revealed a mismatch between the interface and the underlying concept. Judges decide outcomes; proof methods verify them. Conflating the two created confusion about who was responsible for settling a bet and how."
+    },
+    {
+      "type": "callout",
+      "text": "I separated Judge — the person responsible for deciding the outcome — from Proof — the method used to verify the result — then added validation to prevent misuse and a repair workflow for existing tickets that had conflated the two."
+    },
+    {
+      "type": "card-grid",
+      "items": [
+        {
+          "title": "Judge and Proof Separated",
+          "description": "Judge is a person. Proof is a method. Separating them made accountability explicit and eliminated a common source of post-settlement disputes."
+        },
+        {
+          "title": "One Role Per Identity",
+          "description": "A participant cannot hold conflicting roles on the same bet — enforced at both the client and server level."
+        },
+        {
+          "title": "Client and Server Validation",
+          "description": "Role constraints are validated in the UI for fast feedback and again server-side to prevent bypass."
+        },
+        {
+          "title": "Full Settlement State Machine",
+          "description": "Bets move through defined states: active, settled, disputed, voided, and reconsidered. Each transition is intentional and auditable."
+        },
+        {
+          "title": "Administrative Intervention",
+          "description": "Disputed outcomes can be reviewed and resolved by an admin with a full audit trail — giving users a meaningful escalation path."
+        }
+      ]
+    },
+    {
+      "type": "diagram",
+      "title": "Settlement State Machine",
+      "steps": [
+        "Active",
+        "Pending Settlement",
+        "Settled",
+        "Disputed",
+        "Reconsidered / Voided"
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Decision Three: Instrument Growth and Operations"
+    },
+    {
+      "type": "paragraph",
+      "text": "Rather than tracking aggregate traffic, I instrumented the full acquisition and participation funnel so future prioritization could be based on where users actually abandoned the loop — not where we assumed they did."
+    },
+    {
+      "type": "card-grid",
+      "items": [
+        {
+          "title": "Creation and Invitation Funnel",
+          "description": "Every step from landing to bet creation to first invite is tracked with explicit drop-off points identified."
+        },
+        {
+          "title": "Time-to-Action Measurements",
+          "description": "How long between invite and acceptance, and between creation and first share — surfacing where momentum stalls."
+        },
+        {
+          "title": "Referral Attribution",
+          "description": "Tracks which bets and users generated new sign-ups, enabling referral loop analysis rather than just top-line user counts."
+        },
+        {
+          "title": "Needs Attention Queue",
+          "description": "An operational view of bets stuck in ambiguous states — overdue settlements, unresolved disputes — so issues surface before users notice them."
+        },
+        {
+          "title": "SEO-to-Bet-Creation Tracking",
+          "description": "Connects organic search arrivals to downstream bet creation, measuring whether search-intent landing pages drive actual product engagement."
+        }
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Technical Execution"
+    },
+    {
+      "type": "paragraph",
+      "text": "Built and iterated with Claude Code assistance. The stack was chosen for speed of iteration and operational simplicity at early scale."
+    },
+    {
+      "type": "card-grid",
+      "items": [
+        {
+          "title": "Vanilla JavaScript Frontend",
+          "description": "No framework overhead — kept the client fast and the codebase easy to move quickly in."
+        },
+        {
+          "title": "Vercel Serverless Functions",
+          "description": "API layer deployed on Vercel. Vercel's function limits shaped early architecture decisions around batching and caching to stay within constraints."
+        },
+        {
+          "title": "Neon Postgres",
+          "description": "Serverless Postgres for durable bet state, user records, and audit history."
+        },
+        {
+          "title": "Custom Analytics Pipeline",
+          "description": "Event tracking and funnel instrumentation built in-house rather than relying on third-party analytics with opaque data models."
+        },
+        {
+          "title": "Validation Scripts",
+          "description": "Server-side scripts enforce role integrity across all bet states and flag records that violate the Judge / Proof separation model."
+        },
+        {
+          "title": "Static Landing Page Generator",
+          "description": "Generates SEO-targeted landing pages for specific bet types and search intents, tracked back to bet creation in the analytics pipeline."
+        }
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Results"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following reflect what has been shipped and verified. Usage metrics will be added as the product matures."
+    },
+    {
+      "type": "bullet",
+      "text": "Shipped an operational end-to-end bet lifecycle: create, share, accept, settle, dispute, and void."
+    },
+    {
+      "type": "bullet",
+      "text": "Instrumented the full acquisition-through-settlement funnel with explicit drop-off tracking."
+    },
+    {
+      "type": "bullet",
+      "text": "Published nine search-intent landing pages connected to bet creation tracking."
+    },
+    {
+      "type": "bullet",
+      "text": "Implemented cross-device identity and guest-to-account claiming."
+    },
+    {
+      "type": "bullet",
+      "text": "Launched referral attribution and BetNowly+ interest collection."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "What I Would Do Next"
+    },
+    {
+      "type": "bullet",
+      "text": "Replace shipped-output metrics with actual funnel conversion and retention data once volume warrants it."
+    },
+    {
+      "type": "bullet",
+      "text": "Use drop-off data to identify the highest-leverage friction point in the invite-to-acceptance flow."
+    },
+    {
+      "type": "bullet",
+      "text": "Test whether one-tap templates meaningfully improve bet creation rates versus the blank form."
+    },
+    {
+      "type": "bullet",
+      "text": "Evaluate BetNowly+ demand based on interest collection data before committing to a monetization model."
+    }
+  ]
+}

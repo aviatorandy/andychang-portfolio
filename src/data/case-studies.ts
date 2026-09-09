@@ -129,6 +129,21 @@ export const caseStudies: CaseStudy[] = [
     ],
     image: "/images/portfolio/review-intelligence.png",
   },
+  {
+    slug: "betnowly-social-betting",
+    company: "BetNowly",
+    title: "Social Betting Loop for Friends",
+    role: "Founder & Product Lead",
+    description:
+      "Built a web product for creating, sharing, and settling informal bets between friends — with a trust model, full settlement state machine, and instrumented growth funnel",
+    metrics: [
+      "End-to-end bet lifecycle shipped",
+      "Full acquisition funnel instrumented",
+      "9 SEO landing pages launched",
+      "Guest-to-account claiming live",
+    ],
+    image: "/images/portfolio/betnowly.png",
+  },
 ];
 
 export function getCaseStudyBySlug(slug: string): CaseStudy | undefined {
