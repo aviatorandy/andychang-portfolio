@@ -73,6 +73,15 @@ export const sideProjects: WorkItem[] = [
     imageFit: "cover",
     imageBg: "bg-neutral-950",
   },
+  {
+    slug: "betnowly-social-betting",
+    href: "/work/betnowly-social-betting",
+    image: "/images/portfolio/betnowly.png",
+    alt: "BetNowly",
+    caption: "Social Betting Loop for Friends · BetNowly",
+    imageFit: "cover",
+    imageBg: "bg-neutral-900",
+  },
 ];
 
 // ─── New grouped structure used by Work.tsx ───────────────────────────────────
@@ -186,6 +195,18 @@ export const workGroups: WorkGroup[] = [
           "$750K pre-seed raised",
           "200 beta users",
           "4 pilot engagements",
+        ],
+      },
+      {
+        slug: "betnowly-social-betting",
+        href: "/work/betnowly-social-betting",
+        title: "BetNowly — Social Betting Loop for Friends",
+        description:
+          "Built a web product for creating, sharing, and settling informal bets — with guest participation, a trust model, and an instrumented growth funnel.",
+        metrics: [
+          "End-to-end bet lifecycle shipped",
+          "Full acquisition funnel instrumented",
+          "9 SEO landing pages launched",
         ],
       },
     ],
