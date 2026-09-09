@@ -50,9 +50,26 @@ export function CaseStudyDetail({ study, content }: CaseStudyDetailProps) {
         </h1>
 
         {study.role && (
-          <p className="mb-6 text-sm text-[var(--color-ink-subtle)]">{study.role}</p>
+          <p className="mb-4 text-sm text-[var(--color-ink-subtle)]">{study.role}</p>
         )}
 
+        {study.externalUrl && (
+          <a
+            href={study.externalUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mb-6 inline-flex items-center gap-1.5 rounded-md border border-[var(--color-border)] bg-[var(--color-surface-elevated)] px-3 py-1.5 text-sm font-medium text-[var(--color-ink)] transition-colors hover:bg-[var(--color-surface)]"
+          >
+            {study.externalLabel ?? study.externalUrl}
+            <span aria-hidden>↗</span>
+          </a>
+        )}
+
+        {study.metricsLabel && (
+          <p className="mb-2 text-xs font-semibold tracking-wide text-[var(--color-ink-subtle)] uppercase">
+            {study.metricsLabel}
+          </p>
+        )}
         <div className="mb-10 grid grid-cols-2 gap-3 sm:grid-cols-4">
           {study.metrics.map((metric) => (
             <div

@@ -4,8 +4,11 @@ export type CaseStudy = {
   title: string;
   description: string;
   metrics: string[];
+  metricsLabel?: string;
   role?: string;
   image?: string;
+  externalUrl?: string;
+  externalLabel?: string;
 };
 
 export const caseStudies: CaseStudy[] = [
@@ -132,16 +135,19 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "betnowly-social-betting",
     company: "BetNowly",
-    title: "Social Betting Loop for Friends",
+    title: "Social Betting Ledger",
     role: "Founder & Product Lead",
     description:
-      "Built a web product for creating, sharing, and settling informal bets between friends — with a trust model, full settlement state machine, and instrumented growth funnel",
+      "Social betting ledger for creating, sharing, tracking, and settling informal bets — with a trust model, full settlement state machine, and instrumented growth funnel",
     metrics: [
-      "End-to-end bet lifecycle shipped",
-      "Full acquisition funnel instrumented",
-      "9 SEO landing pages launched",
-      "Guest-to-account claiming live",
+      "End-to-end bet lifecycle",
+      "Acquisition funnel instrumented",
+      "9 intent-specific landing pages",
+      "Guest-to-account claiming",
     ],
+    metricsLabel: "Scope shipped",
+    externalUrl: "https://betnowly.com",
+    externalLabel: "View live product",
     image: "/images/portfolio/betnowly.png",
   },
 ];
