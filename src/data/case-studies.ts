@@ -166,7 +166,7 @@ export const caseStudies: CaseStudy[] = [
     metricsLabel: "Scope shipped",
     externalUrl: "https://legaldocmgmttexas.vercel.app",
     externalLabel: "View live prototype",
-    image: "/images/portfolio/irving-platform.png",
+    image: "/images/portfolio/irving-platform.webp",
   },
 ];
 

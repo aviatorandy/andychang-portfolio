@@ -85,7 +85,7 @@ export const sideProjects: WorkItem[] = [
   {
     slug: "irving-city-attorney-platform",
     href: "/work/irving-city-attorney-platform",
-    image: "/images/portfolio/irving-platform.png",
+    image: "/images/portfolio/irving-platform.webp",
     alt: "City of Irving Legal Platform",
     caption: "Government RFP Response — City of Irving · Application Exercise",
     imageFit: "cover",
