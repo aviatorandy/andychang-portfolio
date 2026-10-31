@@ -82,6 +82,15 @@ export const sideProjects: WorkItem[] = [
     imageFit: "cover",
     imageBg: "bg-neutral-900",
   },
+  {
+    slug: "irving-city-attorney-platform",
+    href: "/work/irving-city-attorney-platform",
+    image: "/images/portfolio/irving-platform.png",
+    alt: "City of Irving Legal Platform",
+    caption: "Government RFP Response — City of Irving · Application Exercise",
+    imageFit: "cover",
+    imageBg: "bg-[#1a2744]",
+  },
 ];
 
 // ─── New grouped structure used by Work.tsx ───────────────────────────────────

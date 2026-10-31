@@ -9,6 +9,7 @@ import reviewPipeline from "@/content/case-studies/review-intelligence-pipeline.
 import sahara from "@/content/case-studies/sahara-cloud-co-founder-cpo.json";
 import yext from "@/content/case-studies/yext-platform-automation.json";
 import betnowly from "@/content/case-studies/betnowly-social-betting.json";
+import irvingPlatform from "@/content/case-studies/irving-city-attorney-platform.json";
 
 const contentBySlug: Record<string, CaseStudyContent> = {
   "omnicell-audit-platform": omnicellAudit as CaseStudyContent,
@@ -20,6 +21,7 @@ const contentBySlug: Record<string, CaseStudyContent> = {
   "billhero-ai-dental-billing": billhero as CaseStudyContent,
   "review-intelligence-pipeline": reviewPipeline as CaseStudyContent,
   "betnowly-social-betting": betnowly as CaseStudyContent,
+  "irving-city-attorney-platform": irvingPlatform as CaseStudyContent,
 };
 
 export function getCaseStudyContent(slug: string): CaseStudyContent | undefined {

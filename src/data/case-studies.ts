@@ -150,6 +150,24 @@ export const caseStudies: CaseStudy[] = [
     externalLabel: "View live product",
     image: "/images/portfolio/betnowly.png",
   },
+  {
+    slug: "irving-city-attorney-platform",
+    company: "Application Exercise",
+    title: "Government RFP Response — City of Irving",
+    role: "Forward Deployed PM Exercise · Concourse Tech",
+    description:
+      "Responded to a live $200K–$500K government RFP by building and deploying a working legal case management prototype for the City of Irving Office of the City Attorney in under one hour",
+    metrics: [
+      "Live RFP → working prototype",
+      "Deployed to production",
+      "Scoped to core operational problem",
+      "Framed as Concourse product",
+    ],
+    metricsLabel: "Scope shipped",
+    externalUrl: "https://legaldocmgmttexas.vercel.app",
+    externalLabel: "View live prototype",
+    image: "/images/portfolio/irving-platform.png",
+  },
 ];
 
 export function getCaseStudyBySlug(slug: string): CaseStudy | undefined {

@@ -1,0 +1,193 @@
+{
+  "title": "Responding to a $200K–$500K Government RFP in Under an Hour",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "A take-home exercise for a Forward Deployed Product Manager role at Concourse — an AI-native software company serving government agencies. The task: find a real, open government RFP and build a working product concept using AI tools, with a budget of roughly one hour of hands-on work."
+    },
+    {
+      "type": "callout",
+      "text": "Andy read a live $200K–$500K government RFP, identified the core operational problem, scoped it to a demonstrable prototype, shipped to production, and framed the output as a Concourse product response — not a generic demo."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "The RFP"
+    },
+    {
+      "type": "paragraph",
+      "text": "The City of Irving, Texas (Solicitation 147C-26F) was seeking to replace its existing legal case management software with a modern, cloud-enabled platform. The stated scope covered case tracking, document storage, contract and claims management, reporting, and integrations with Microsoft Office 365 and Adobe Acrobat Pro — a full enterprise system replacement valued at $200K–$500K."
+    },
+    {
+      "type": "card-grid",
+      "items": [
+        {
+          "title": "Buyer",
+          "description": "City of Irving, Texas — Office of the City Attorney"
+        },
+        {
+          "title": "Solicitation",
+          "description": "147C-26F · Request for Proposal · IT Services"
+        },
+        {
+          "title": "Budget",
+          "description": "$200,000 – $500,000 including licensing, implementation, migration, and training"
+        },
+        {
+          "title": "Required integrations",
+          "description": "Microsoft Office 365 (Outlook, Calendar) and Adobe Acrobat Pro"
+        }
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Decision One: Scope to the Core Operational Problem"
+    },
+    {
+      "type": "paragraph",
+      "text": "A full RFP response would cover software licensing, data migration, training, and integrations. None of those can be demonstrated in a prototype — and none of them are what a government buyer needs to see to believe a product is worth evaluating. The core problem the City Attorney's office actually faces is operational: tracking dozens of open matters across multiple case types, departments, and deadlines, with financial exposure visible at a glance."
+    },
+    {
+      "type": "diagram",
+      "title": "What Was in the RFP vs. What Was Scoped for the Demo",
+      "beforeLabel": "Full RFP scope",
+      "afterLabel": "Demo scope",
+      "before": [
+        "Case tracking across matter types",
+        "Document storage and management",
+        "Contract and claims handling",
+        "Reporting and analytics",
+        "Microsoft Office 365 integration",
+        "Adobe Acrobat Pro integration",
+        "Data migration from existing system",
+        "Implementation services and training"
+      ],
+      "after": [
+        "Litigation and matters docket with case-type filtering",
+        "Deadline urgency indicators and milestone tracking",
+        "Financial exposure aggregated by open matter",
+        "Department attribution across case types",
+        "Navigation stubs showing full system scope"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Integrations, migration, and training are real requirements — but they are procurement line items, not demo features. Showing a buyer that you understand how their attorneys actually work is more valuable than claiming you can connect to Outlook."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Decision Two: Name It as a Concourse Product"
+    },
+    {
+      "type": "paragraph",
+      "text": "The exercise asked for a product concept in response to the RFP. A generic prototype responds to that literally. A forward deployed PM responds to it as the vendor: they show the buyer what it would look like to use your product, with your company's name on it, in their context."
+    },
+    {
+      "type": "callout",
+      "text": "The prototype was titled 'Concourse Platform | City of Irving Office of the City Attorney' — not a demo, but a preview of a real product response, scoped to one city and one office."
+    },
+    {
+      "type": "paragraph",
+      "text": "The application was pre-loaded with realistic Irving-specific cases: vendor contracts under Legal Redline for IT, Police, and Parks departments; civil actions in Discovery for zoning disputes and drainage easements; ordinance enforcement matters at various stages in Municipal Court. The goal was not to show a product could exist — it was to show what using it would actually feel like."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "What Was Shipped"
+    },
+    {
+      "type": "card-grid",
+      "items": [
+        {
+          "title": "Litigation & Matters Docket",
+          "description": "Primary view showing all 11 open matters sortable by deadline, with case type, department, status, and financial exposure in a single table."
+        },
+        {
+          "title": "Financial Exposure Dashboard",
+          "description": "Four summary tiles: active matters, total financial exposure ($1.39M), urgent deadlines under 15 days, and contracts pending council approval."
+        },
+        {
+          "title": "Case Type Filtering",
+          "description": "One-click filters for Vendor Contracts (6), Ordinances (3), and Civil Actions (2), matching the actual case mix a city attorney's office handles."
+        },
+        {
+          "title": "Deadline Urgency Indicators",
+          "description": "Color-coded warnings for Council Agenda deadlines and Civil Court Answer deadlines, surfacing the two most urgent matters immediately."
+        },
+        {
+          "title": "Full Navigation Scaffold",
+          "description": "Five sections stubbed: Litigation & Matters Docket, Claims Intake & Triage, Document Ingestion & Triage, Contract Compliance Studio, and Reporting & Analytics."
+        }
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Technical Execution"
+    },
+    {
+      "type": "paragraph",
+      "text": "Built with Claude Code, deployed to Vercel. The exercise specified approximately one hour of hands-on work; production deployment was listed as a bonus, not a requirement. The prototype was shipped live and accessible at a public URL, which was submitted as part of the application."
+    },
+    {
+      "type": "diagram",
+      "title": "Stack",
+      "fields": [
+        "Claude Code",
+        "Vercel",
+        "Next.js",
+        "Tailwind CSS"
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Current Evidence"
+    },
+    {
+      "type": "bullet",
+      "text": "Identified a live $200K–$500K government RFP and scoped it to a demonstrable core."
+    },
+    {
+      "type": "bullet",
+      "text": "Built and deployed a working prototype to production within the one-hour time constraint."
+    },
+    {
+      "type": "bullet",
+      "text": "Pre-populated with Irving-specific case data covering the actual range of matter types a city attorney manages."
+    },
+    {
+      "type": "bullet",
+      "text": "Framed the output as a Concourse product response, not a generic prototype."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "What This Exercise Was Evaluating"
+    },
+    {
+      "type": "paragraph",
+      "text": "Concourse stated explicitly that they were not scoring code quality or visual polish — they were evaluating scoping judgment, effective use of AI tools, knowing when to stop, and the ability to communicate a technical output to a non-technical government buyer. The scoping decision (what to build and what to leave out) and the framing decision (whose product is this?) were the actual submission."
+    }
+  ]
+}
